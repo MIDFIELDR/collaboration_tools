@@ -2,8 +2,26 @@
 .Rhistory
 .Rapp.history
 
-# Session Data files
+# R and RStudio files not version controlled
+.Rhistory
+.Rapp.history
 .RData
+.Rproj.user/
+
+# project files not version controlled
+manage
+
+# raw data files not version controlled
+data-raw
+
+# top directory files not version controlled
+*.html
+
+# sub-directory files not version controlled
+*/*.html
+*/*.docx
+*/*.pptx
+*/*.xlsx
 
 # User-specific files
 .Ruserdata
@@ -17,11 +35,7 @@
 # Output files from R CMD check
 /*.Rcheck/
 
-# RStudio files
-.Rproj.user/
-
 # produced vignettes
-vignettes/*.html
 vignettes/*.pdf
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
@@ -34,6 +48,3 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
-
-# R Environment Variables
-.Renviron

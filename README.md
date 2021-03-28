@@ -1,5 +1,5 @@
 
-# MIDFIELD collaboration tools <span class="border-wrap"><img src="resources/midfieldcut.png" align="right" height="40" width="165" alt="logo.png"></span>
+# MIDFIELD collaboration tools <span class="border-wrap"><img src="resources/midfieldcut.png" align="right" height="50" width="206" alt="logo.png"></span>
 
 -   [Installing software](pages/p001-install-software.md) R, RStudio,
     and git

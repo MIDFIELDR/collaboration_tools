@@ -67,3 +67,8 @@ When updating packages, if a window pops up asking about compilation,
 -   NO saves time
 -   YES gets you the latest version but can be time-consuming. Don’t say
     yes if you are in a hurry to get some work done.
+
+------------------------------------------------------------------------
+
+<a href="#top">▲ top of page</a>  
+[◁ main page](../README.md)

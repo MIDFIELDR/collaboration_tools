@@ -48,3 +48,8 @@ The collaborator:
 -   Navigates to the repo
 -   Click the *Fork* button and select the destination (typically your
     GitHub account)
+
+------------------------------------------------------------------------
+
+<a href="#top">▲ top of page</a>  
+[◁ main page](../README.md)

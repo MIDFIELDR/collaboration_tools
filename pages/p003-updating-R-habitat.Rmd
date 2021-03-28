@@ -85,4 +85,8 @@ When updating packages, if a window pops up asking about compilation,
 
 
 
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; main page](../README.md)
+
 

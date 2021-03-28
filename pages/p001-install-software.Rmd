@@ -19,7 +19,8 @@ knit_hooks$set(inline = function(x) {
 	})
 ```
 
-Before we can collaborate GitHub for version control, both you and your collaborator have to install software and setup accounts as follows. 
+Before we can collaborate using GitHub, both you and your collaborator have to install software and setup accounts as follows. 
+
 
 
 ## install R and RStudio
@@ -45,6 +46,8 @@ Jenny Bryan provided these installation instructions for a workshop I attended. 
 - [Linux](https://happygitwithr.com/install-git.html#linux) install
 
 Optional reading: Read sections 1 and 2 of [Excuse me, do you have a moment to talk about version control?](https://dx.doi.org/10.7287%2Fpeerj.preprints.3159v2) for a good introduction to version control.
+
+
 
 ## setup GitHub
 

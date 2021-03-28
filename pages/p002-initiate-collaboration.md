@@ -19,6 +19,7 @@ There are two approaches:
 
 The repo author:
 
+-   The repo can be public or private
 -   You need your collaborator’s GitHub name or email address associated
     with their GitHub account
 -   Navigate to your project repo on GitHub
@@ -35,9 +36,12 @@ The collaborator:
 
 The repo author:
 
+-   The repo has to be public for the collaborator to be able to fork
+    it.
 -   Give the repo URL to the collaborator
 
 The collaborator:
 
 -   Navigates to the repo
--   Clicke the
+-   Click the *Fork* button and select the destination (typically your
+    GitHub account)

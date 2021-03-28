@@ -1,8 +1,8 @@
 installing software
 ================
 
-Before we can collaborate GitHub for version control, both you and your
-collaborator have to install software and setup accounts as follows.
+Before we can collaborate using GitHub, both you and your collaborator
+have to install software and setup accounts as follows.
 
 ## install R and RStudio
 

@@ -17,6 +17,9 @@ There are two approaches:
 
 ## collaboration among project administrators
 
+In this approach, the collaborator has authority to edit the project
+material without pre-approval by other administrators.
+
 The repo author:
 
 -   The repo can be public or private

@@ -21,13 +21,17 @@ knit_hooks$set(inline = function(x) {
 
 We'll assume that you (the **author**) have a project in a GitHub repo and that you want to invite a **collaborator**. Both the author and the collaborator should have completed the [Installing software](p001-install-software.md) instructions. 
 
-
 There are two approaches: 
 
 1. The collaborator is one of the project administrators. For example, in MIDFIELD, the administrator team includes Ohland, Lord, Long, Orr, and Layton. 
 2. The collaborator is not an administrator so their work has to be reviewed by one of the administrators before being accepted. Grad students might fall into this category. 
 
+
+
+
 ## collaboration among project administrators
+
+In this approach, the collaborator has authority to edit the project material without pre-approval by other administrators. 
 
 The repo author: 
 

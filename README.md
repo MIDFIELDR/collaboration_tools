@@ -9,3 +9,7 @@
     administrators](pages/p002-initiate-collaboration.md)
 -   [Initiating collaboration requiring administrator
     review](pages/p002-initiate-collaboration.md)
+
+<div id="refs">
+
+</div>

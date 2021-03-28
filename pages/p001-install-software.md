@@ -71,3 +71,8 @@ Cleanup
 -   Delete the test project on your machine
 -   Delete the test repo on GitHub, *Settings &gt; Danger Zone &gt;
     Delete this repository*
+
+------------------------------------------------------------------------
+
+<a href="#top">▲ top of page</a>  
+[◁ main page](../README.md)

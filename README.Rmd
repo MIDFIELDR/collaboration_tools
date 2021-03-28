@@ -12,3 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Updating the R habitat](pages/p003-updating-R-habitat.md) If you already have R and RStudio installed
 - [Initiating collaboration among administrators](pages/p002-initiate-collaboration.md)
 - [Initiating collaboration requiring administrator review](pages/p002-initiate-collaboration.md)
+
+
+<div id="refs">
+</div>
+
+
+

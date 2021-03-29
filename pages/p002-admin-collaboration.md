@@ -114,6 +114,10 @@ Select *Push* to send your changes to GitHub. A *Git Push* window
 appears with a message on the status of the push. You can close the
 window.
 
+To confirm that your changes have been correctly pushed, navigate to the
+GitHub repo. You should find that the remote repository contains your
+recent edits.
+
 ------------------------------------------------------------------------
 
 <a href="#top">▲ top of page</a>  

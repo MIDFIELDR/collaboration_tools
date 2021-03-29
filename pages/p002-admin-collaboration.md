@@ -1,29 +1,57 @@
 collaboration among project administrators
 ================
 
-To proceed, the **author** has a project in a GitHub repo and wants to
-invite a **collaborator**.
+We start by assuming a project administrator has created an RStudio
+“project” on their local machine and has linked it to a GitHub
+repository (a “repo”). The repo **author** is ready to invite a
+**collaborator.** Both author and collaborator should have completed the
+[Installing software](p001-install-software.md) instructions.
 
-Both author and collaborator have completed the [Installing
-software](p001-install-software.md) instructions.
+In this approach, the collaborator has the ability and authority to edit
+the project material without the author’s pre-approval. However, because
+we’re using version control, no version is ever lost. We can always
+revert to an earlier version if needed.
 
-In this approach, the collaborator has authority to edit the project
-material without pre-approval by other administrators.
+## Author’s initial tasks
 
-The repo author:
-
--   Make the repo public or private
 -   Obtain the collaborator’s GitHub name or email address associated
     with their GitHub account
--   Navigate to the project repo on GitHub
+-   Navigate to the project repo on GitHub (the repo can be public or
+    private)
 -   Click on the *Settings* icon
 -   Click on the *Manage access* tab
 -   Click on the *Invite teams or people* button
 -   Type the collaborator’s GitHub name or email in the dialog box.
 
-The collaborator:
+## Collaborator’s initial tasks
 
--   Receives the invitation and accepts the invitation
+The collaborator receives and accepts the invitation to collaborate.
+
+The collaborator “clones” the project as follows.
+
+-   Navigate to the project repo.
+-   *Code* pulldown menu and copy the project URL, for example:
+
+![](../resources/git-collab-001.png)
+
+-   Keep the URL in your clipboard or save it locally in a temporary
+    text file
+-   Launch RStudio
+-   *File &gt; New Project* and select *Version Control*
+
+![](../resources/git-collab-002.png)
+
+-   Select *Git*
+
+![](../resources/git-collab-003.png)
+
+-   In the dialog box, paste the *Repository URL* you saved earlier
+-   The *Project directory name* is auto-filled
+-   Use the *Browse* button to select the local directory for storing
+    the project files
+-   Click the *Create project* button
+
+![](../resources/git-collab-004.png)
 
 ------------------------------------------------------------------------
 

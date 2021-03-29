@@ -94,7 +94,8 @@ Close the commit windows that appear.
 
 ## pull with rebase
 
-Use the *Pull* pulldown menu to select *Pull with Rebase*.
+Select the Git tab. Use the *Pull* pulldown menu to select *Pull with
+Rebase*.
 
 ![](../resources/git-collab-009.png)
 
@@ -105,6 +106,8 @@ Using pull with rebase, your commits are applied on top of incoming
 changes.
 
 ## push
+
+Select *Push* to send your changes to the remote repo on GitHub.
 
 ------------------------------------------------------------------------
 

@@ -14,8 +14,10 @@ authority to edit project files.
 
 -   [Author’s initial tasks](#authors-initial-tasks)
 -   [Co-author’s initial tasks](#co-authors-initial-tasks)
--   [Workflow](#workflow)
 -   [Synchronizing work](#synchronizing-work)
+-   [Commit](#commit)
+-   [Pull with rebase](#pull-with-rebase)
+-   [Push](#push)
 
 ## author’s initial tasks
 
@@ -60,7 +62,7 @@ The co-author “clones” the project as follows.
 
 The co-author now has a local repo that matches the main repo on GitHub.
 
-## workflow
+## synchronizing work
 
 As the figure illustrates, each worker has their own repository on their
 local machine and GitHub is used as the single common repository for
@@ -69,13 +71,11 @@ project.
 
 ![](../resources/git-collab-005.png)
 
-## synchronizing work
+## commit
 
 Typically, different authors may be working on different files in the
 project at the same time. To synchronize the work, all authors follow
 the steps described here.
-
-**Commit**
 
 On your local machine, in RStudio, select the Git tab, for example,
 
@@ -92,11 +92,19 @@ changes. Click the *Commit* button.
 
 Close the commit windows that appear.
 
-**Pull with rebase**
+## pull with rebase
 
 Use the *Pull* pulldown menu to select *Pull with Rebase*.
 
 ![](../resources/git-collab-009.png)
+
+A *Git Pull* window will appear. The message will describe changes since
+the last time you pulled.
+
+Using pull with rebase, your commits are applied on top of incoming
+changes.
+
+## push
 
 ------------------------------------------------------------------------
 

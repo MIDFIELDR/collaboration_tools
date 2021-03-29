@@ -30,9 +30,10 @@ In this approach, author and co-authors all have the ability and authority to ed
 
 - [Author's initial tasks] 
 - [Co-author's initial tasks] 
-- [Workflow] 
 - [Synchronizing work] 
-
+- [Commit] 
+- [Pull with rebase] 
+- [Push] 
 
 
 
@@ -79,18 +80,18 @@ The co-author now has a local repo that matches the main repo on GitHub.
 
 
 
-## workflow
+## synchronizing work
 
 As the figure illustrates, each worker has their own repository on their local machine and GitHub is used as the single common repository for coordination. Thus the GitHub repo is the main or primary record of the project. 
 
 ![](../resources/git-collab-005.png)
 
 
-## synchronizing work
+
+## commit
 
 Typically, different authors may be working on different files in the project at the same time. To synchronize the work, all authors follow the steps described here.
 
-**Commit** 
 
 On your local machine, in RStudio, select the Git tab, for example, 
 
@@ -106,11 +107,30 @@ Click on *Commit*. In the dialog box, type a short description of the changes. C
 
 Close the commit windows that appear. 
 
-**Pull with rebase**  
+
+
+## pull with rebase
 
 Use the *Pull* pulldown menu to select *Pull with Rebase*. 
 
 ![](../resources/git-collab-009.png)
+
+A *Git Pull* window will appear. The message will describe changes since the last time you pulled. 
+
+Using pull with rebase, your commits are applied on top of incoming changes.  
+
+
+
+## push 
+
+
+
+
+
+
+
+
+
 
 
 

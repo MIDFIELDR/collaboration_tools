@@ -1,5 +1,5 @@
 ---
-title: "collaboration among project administrators"
+title: "collaboration among co-authors"
 output: github_document
 editor_options: 
   chunk_output_type: console
@@ -22,24 +22,36 @@ knit_hooks$set(inline = function(x) {
 ```
 
 
-We start by assuming a project administrator has created an RStudio "project" on their local machine and has linked it to a GitHub repository (a "repo"). The repo **author** is ready to invite a **collaborator.** Both author and collaborator should have completed the [Installing software](p001-install-software.md) instructions.
+We start by assuming an **author** has created an RStudio "project" on their local machine and has linked it to a GitHub repository (a "repo"). The author is ready to invite a **co-author** to collaborate. Both author and co-author should have completed the [Installing software](p001-install-software.md) instructions.
 
-In this approach, the collaborator has the ability and authority to edit the project material without the author's pre-approval. However, because we're using version control, no version is ever lost. We can always revert to an earlier version if needed. 
+In this approach, author and co-authors all have the ability and authority to edit project files. 
 
-## Author's initial tasks
+## contents
 
-- Obtain the collaborator's GitHub name or email address associated with their GitHub account 
+- [Author's initial tasks] 
+- [Co-author's initial tasks] 
+- [Workflow] 
+- [Synchronizing work] 
+
+
+
+
+## author's initial tasks
+
+- Obtain the co-author's GitHub name or email address associated with their GitHub account 
 - Navigate to the project repo on GitHub (the repo can be public or private)
 - Click on the *Settings* icon 
 - Click on the *Manage access* tab 
 - Click on the *Invite teams or people* button 
-- Type the collaborator's GitHub name or email in the dialog box. 
+- Type the co-author's GitHub name or email in the dialog box. 
 
-## Collaborator's initial tasks
 
-The collaborator receives and accepts the invitation to collaborate.  
 
-The collaborator "clones" the project as follows. 
+## co-author's initial tasks
+
+The co-author receives and accepts the invitation to collaborate.  
+
+The co-author "clones" the project as follows. 
 
 - Navigate to the project repo. 
 - *Code* pulldown menu and copy the project URL, for example: 
@@ -49,7 +61,6 @@ The collaborator "clones" the project as follows.
 - Keep the URL in your clipboard or save it locally in a temporary text file 
 - Launch RStudio
 - *File > New Project* and select *Version Control* 
-
 
 ![](../resources/git-collab-002.png)
 
@@ -63,6 +74,35 @@ The collaborator "clones" the project as follows.
 - Click the *Create project* button
 
 ![](../resources/git-collab-004.png)
+
+The co-author now has a local repo that matches the main repo on GitHub. 
+
+
+
+## workflow
+
+As the figure illustrates, each worker has their own repository on their local machine and GitHub is used as the single common repository for coordination. Thus the GitHub repo is the main or primary record of the project. 
+
+![](../resources/git-collab-005.png)
+
+
+## synchronizing work
+
+Typically, two authors may be working on different files in the project at the same time. To merge one's recent work with a co-author's work, we use the git functions:
+
+- `commit` 
+- `pull` with rebase 
+- `push` 
+
+On your local machine, in RStudio, select the Git tab, for example, 
+
+![](../resources/git-collab-006.png)
+
+Under the *Staged* column, check all the boxes.
+
+![](../resources/git-collab-007.png)
+
+Click on *Commit*. In the dialog box, type a short description of the changes. 
 
 
 

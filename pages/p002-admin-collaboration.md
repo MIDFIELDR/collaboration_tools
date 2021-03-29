@@ -90,6 +90,8 @@ changes. Click the *Commit* button.
 
 ![](../resources/git-collab-008.png)
 
+Close the commit windows that appear.
+
 ------------------------------------------------------------------------
 
 <a href="#top">▲ top of page</a>  

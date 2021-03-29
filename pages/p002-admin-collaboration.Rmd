@@ -104,6 +104,8 @@ Click on *Commit*. In the dialog box, type a short description of the changes. C
 
 ![](../resources/git-collab-008.png)
 
+Close the commit windows that appear. 
+
 
 
 

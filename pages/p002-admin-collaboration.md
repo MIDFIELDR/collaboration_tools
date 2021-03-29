@@ -7,8 +7,8 @@ The author is ready to invite a **co-author** to collaborate. Both
 author and co-author should have completed the [Installing
 software](p001-install-software.md) instructions.
 
-In this approach, author and co-authors all have the ability and
-authority to edit project files.
+In this approach, author and co-authors all have permission to make
+changes without prior approval by another author.
 
 ## contents
 

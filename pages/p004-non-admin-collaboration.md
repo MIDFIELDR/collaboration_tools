@@ -3,13 +3,13 @@ sharing work with assistants
 
 We start by assuming an **author** has created an RStudio “project” on
 their local machine and has linked it to a GitHub repository (a “repo”).
-The author is ready to share wotk with an **assistant**. Both author and
+The author is ready to share work with an **assistant**. Both author and
 assistant should have completed the [Installing
 software](p001-install-software.md) instructions.
 
 In this approach, the assistant’s work is submitted to the project as a
-pull request that requires review by a project administrator before
-acceptance.
+pull request that requires review by the author (or other project
+administrator) before acceptance.
 
 ## contents
 

@@ -13,6 +13,8 @@ GitHub.
     git, and GitHub
 -   [Using version control to share
     work](pages/p002-admin-collaboration.md)
+-   [Sharing work with
+    assistants](pages/p004-non-admin-collaboration.md)
 
 ## resources
 

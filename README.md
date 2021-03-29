@@ -11,10 +11,8 @@ GitHub.
     already have R and RStudio installed
 -   [Installing software](pages/p001-install-software.md) R, RStudio,
     git, and GitHub
--   [Collaboration among project
-    administrators](pages/p002-admin-collaboration.md)
--   [Collaboration requiring admin
-    review](pages/p004-non-admin-collaboration.md)
+-   [Using version control to share
+    work](pages/p002-admin-collaboration.md)
 
 ## resources
 

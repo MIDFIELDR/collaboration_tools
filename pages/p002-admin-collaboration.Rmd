@@ -1,5 +1,5 @@
 ---
-title: "collaboration among co-authors"
+title: "using version control to share work"
 output: github_document
 editor_options: 
   chunk_output_type: console
@@ -20,7 +20,6 @@ knit_hooks$set(inline = function(x) {
 		}
 	})
 ```
-
 
 We start by assuming an **author** has created an RStudio "project" on their local machine and has linked it to a GitHub repository (a "repo"). The author is ready to invite a **co-author** to collaborate. Both author and co-author should have completed the [Installing software](p001-install-software.md) instructions.
 

@@ -1,4 +1,4 @@
-collaboration among co-authors
+using version control to share work
 ================
 
 We start by assuming an **author** has created an RStudio “project” on

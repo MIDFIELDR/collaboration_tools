@@ -1,0 +1,43 @@
+---
+title: "collaboration requiring admin review"
+output: github_document
+---
+
+```{r echo = FALSE, message = FALSE}
+library(knitr)
+opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+opts_chunk$set(collapse = TRUE, comment = "#>")
+opts_chunk$set(warning = TRUE, message = TRUE) 
+knit_hooks$set(inline = function(x) {
+	if (!is.numeric(x)) { 
+		x 
+		} else if (x >= 10000) { 
+		prettyNum(round(x, 2), big.mark = ",")
+		} else {
+		prettyNum(round(x, 2))
+		}
+	})
+```
+
+To proceed, the **author** has a project in a GitHub repo and wants to invite a **collaborator**. 
+
+Both author and collaborator have completed the [Installing software](p001-install-software.md) instructions. 
+
+In this approach, the collaborator is not an administrator so their work has to be reviewed by one of the administrators before being accepted. Student collaborators  might fall into this category. 
+
+The repo author: 
+
+- Make the repo public so the collaborator can fork it. 
+- Give the repo URL to the collaborator
+
+The collaborator: 
+
+- Navigate to the repo
+- Click the *Fork* button and select the destination (typically their GitHub account)  
+
+
+
+
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; main page](../README.md)

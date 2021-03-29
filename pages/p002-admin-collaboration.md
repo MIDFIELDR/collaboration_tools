@@ -73,9 +73,9 @@ project.
 
 ## commit
 
-Typically, different authors may be working on different files in the
-project at the same time. To synchronize the work, all authors follow
-the steps described here.
+Typically, different authors may be working on the project at the same
+time. To synchronize the work, all authors follow the steps described
+here.
 
 On your local machine, in RStudio, select the Git tab, for example,
 
@@ -92,22 +92,27 @@ changes. Click the *Commit* button.
 
 Close the commit windows that appear.
 
+Commit your work often.
+
 ## pull with rebase
 
-Select the Git tab. Use the *Pull* pulldown menu to select *Pull with
-Rebase*.
+When you are ready to synchronize your work, first do a final commit if
+you have any unstaged changes.
+
+Next, under the Git tab, use the *Pull* pulldown menu to select *Pull
+with Rebase*.
 
 ![](../resources/git-collab-009.png)
 
-A *Git Pull* window will appear. The message will describe changes since
-the last time you pulled.
-
-Using pull with rebase, your commits are applied on top of incoming
-changes.
+A *Git Pull* window appears. The message will describe changes since the
+last time you pulled from the GitHub repo. Using pull with rebase, your
+commits are applied on top of incoming changes.
 
 ## push
 
-Select *Push* to send your changes to the remote repo on GitHub.
+Select *Push* to send your changes to GitHub. A *Git Push* window
+appears with a message on the status of the push. You can close the
+window.
 
 ------------------------------------------------------------------------
 

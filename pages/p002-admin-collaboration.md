@@ -71,21 +71,24 @@ project.
 
 ## synchronizing work
 
-Typically, two authors may be working on different files in the project
-at the same time. To merge one’s recent work with a co-author’s work, we
-use the git functions:
+Typically, different authors may be working on different files in the
+project at the same time. To synchronize the work, all authors follow
+the steps described here.
 
--   `commit`
--   `pull` with rebase
--   `push`
+**Commit**
 
-On your local machine, in RStudio, select the Git tab, for example
+On your local machine, in RStudio, select the Git tab, for example,
 
 ![](../resources/git-collab-006.png)
 
-Under the *Staged* column, check all the boxes
+Check all the boxes in the *Staged* column.
 
 ![](../resources/git-collab-007.png)
+
+Click on *Commit*. In the dialog box, type a short description of the
+changes. Click the *Commit* button.
+
+![](../resources/git-collab-008.png)
 
 ------------------------------------------------------------------------
 

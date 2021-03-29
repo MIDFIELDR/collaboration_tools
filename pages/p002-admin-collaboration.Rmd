@@ -106,7 +106,11 @@ Click on *Commit*. In the dialog box, type a short description of the changes. C
 
 Close the commit windows that appear. 
 
+**Pull with rebase**  
 
+Use the *Pull* pulldown menu to select *Pull with Rebase*. 
+
+![](../resources/git-collab-009.png)
 
 
 

@@ -92,6 +92,12 @@ changes. Click the *Commit* button.
 
 Close the commit windows that appear.
 
+**Pull with rebase**
+
+Use the *Pull* pulldown menu to select *Pull with Rebase*.
+
+![](../resources/git-collab-009.png)
+
 ------------------------------------------------------------------------
 
 <a href="#top">▲ top of page</a>  

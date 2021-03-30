@@ -14,7 +14,7 @@ changes without prior approval by another author.
 
 -   [Author’s initial tasks](#authors-initial-tasks)
 -   [Co-author’s initial tasks](#co-authors-initial-tasks)
--   [Synchronizing work](#synchronizing-work)
+-   [Synchronizing the work](#synchronizing-the-work)
 -   [Commit](#commit)
 -   [Pull with rebase](#pull-with-rebase)
 -   [Push](#push)
@@ -62,7 +62,7 @@ The co-author “clones” the project as follows.
 
 The co-author now has a local repo that matches the main repo on GitHub.
 
-## synchronizing work
+## synchronizing the work
 
 As the figure illustrates, each worker has their own repository on their
 local machine and GitHub is used as the single common repository for

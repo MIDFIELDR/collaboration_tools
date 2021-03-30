@@ -32,7 +32,7 @@ In this approach, author and co-authors all have permission to make changes with
 
 - [Author's initial tasks] 
 - [Co-author's initial tasks] 
-- [Synchronizing work] 
+- [Synchronizing the work] 
 - [Commit] 
 - [Pull with rebase] 
 - [Push] 
@@ -82,7 +82,7 @@ The co-author now has a local repo that matches the main repo on GitHub.
 
 
 
-## synchronizing work
+## synchronizing the work
 
 As the figure illustrates, each worker has their own repository on their local machine and GitHub is used as the single common repository for coordination. Thus the GitHub repo is the main or primary record of the project. 
 

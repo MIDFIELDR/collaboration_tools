@@ -1,6 +1,8 @@
 ---
 title: "sharing work with assistants"
 output: github_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r echo = FALSE, message = FALSE}
@@ -29,7 +31,8 @@ In this approach, the assistant's work is submitted to the project as a pull req
 
 - [Author's initial tasks] 
 - [Assistant's initial tasks] 
-- [Synchronizing work] 
+- [Synchronizing the work] 
+- [Commit]  
 
 
 
@@ -74,12 +77,33 @@ The assistant now has a local repo that matches the fork they created.
 
 
 
-## synchronizing work
+## synchronizing the work
 
-TBA
+As the figure illustrates, the assistant forks and clones the project. The assistant can pull and push to their own remote repo on GitHub but they must initiate a pull request to transmit their proposed changes to the main project repo where it is reviewed before acceptance. 
+
+![](../resources/git-collab-010.png)
 
 
 
+
+
+## commit
+
+Let's assume you have edited th project files on your local machine. In RStudio, select the Git tab, for example, 
+
+![](../resources/git-collab-006.png)
+
+Check all the boxes in the *Staged* column. 
+
+![](../resources/git-collab-007.png)
+
+Click on *Commit*. In the dialog box, type a short description of the changes. Click the *Commit* button. 
+
+![](../resources/git-collab-008.png)
+
+Close the commit windows that appear. 
+
+Commit your work often.
 
 
 

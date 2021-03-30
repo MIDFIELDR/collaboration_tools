@@ -15,7 +15,8 @@ administrator) before acceptance.
 
 -   [Author’s initial tasks](#authors-initial-tasks)
 -   [Assistant’s initial tasks](#assistants-initial-tasks)
--   [Synchronizing work](#synchronizing-work)
+-   [Synchronizing the work](#synchronizing-the-work)
+-   [Commit](#commit)
 
 ## author’s initial tasks
 
@@ -57,9 +58,34 @@ The assistant “forks” and “clones” the project as follows.
 
 The assistant now has a local repo that matches the fork they created.
 
-## synchronizing work
+## synchronizing the work
 
-TBA
+As the figure illustrates, the assistant forks and clones the project.
+The assistant can pull and push to their own remote repo on GitHub but
+they must initiate a pull request to transmit their proposed changes to
+the main project repo where it is reviewed before acceptance.
+
+![](../resources/git-collab-010.png)
+
+## commit
+
+Let’s assume you have edited th project files on your local machine. In
+RStudio, select the Git tab, for example,
+
+![](../resources/git-collab-006.png)
+
+Check all the boxes in the *Staged* column.
+
+![](../resources/git-collab-007.png)
+
+Click on *Commit*. In the dialog box, type a short description of the
+changes. Click the *Commit* button.
+
+![](../resources/git-collab-008.png)
+
+Close the commit windows that appear.
+
+Commit your work often.
 
 ------------------------------------------------------------------------
 

@@ -5,6 +5,11 @@ The purpose of this handbook is to share tips and tools with members of
 the team to facilitate more effective collaboration using R, RStudio, ad
 GitHub.
 
+![](resources/menard-county.jpg) <small> <br> <i>Menard County,
+Texas</i> by Matthew High is licensed under
+<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
+BY-SA 2.0</a> <br> </small>
+
 ## contents
 
 -   [Updating the R habitat](pages/p003-updating-R-habitat.md) If you

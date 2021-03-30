@@ -1,6 +1,11 @@
 sharing work with assistants
 ================
 
+![](../resources/near-future.jpg) <small> <br> <i>Near future</i> by
+Anja Mexicola is licensed under
+<a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC
+BY-NC 2.0</a> <br> </small>
+
 We start by assuming an **author** has created an RStudio “project” on
 their local machine and has linked it to a GitHub repository (a “repo”).
 The author is ready to share work with an **assistant**. Both author and
@@ -16,7 +21,10 @@ administrator) before acceptance.
 -   [Author’s initial tasks](#authors-initial-tasks)
 -   [Assistant’s initial tasks](#assistants-initial-tasks)
 -   [Synchronizing the work](#synchronizing-the-work)
--   [Commit](#commit)
+-   [Branch](#branch)
+-   [Commit](#commit)  
+-   [Pull from and push to the fork](#pull-from-and-push-to-the-fork)
+-   [Pull request](#pull-request)
 
 ## author’s initial tasks
 
@@ -67,9 +75,22 @@ the main project repo where it is reviewed before acceptance.
 
 ![](../resources/git-collab-010.png)
 
+## branch
+
+Because you will be submitting changes to the project owners for review,
+they will be happier to receive your pull request from a non-main
+branch.
+
+Therefore, before beginning any work on your copy of the project, work
+in a new branch, not the main branch.
+
+<!-- If you make any commits in your local repository, I strongly recommend that you work in a new branch, not master. -->
+<!-- I strongly recommend that you do not make commits to master of a repo you have forked. -->
+<!-- This will make your life much easier if you want to pull upstream work into your copy. The OWNER of REPO will also be happier to receive your pull request from a non-master branch. -->
+
 ## commit
 
-Let’s assume you have edited th project files on your local machine. In
+Let’s assume you have edited the project files on your local machine. In
 RStudio, select the Git tab, for example,
 
 ![](../resources/git-collab-006.png)
@@ -86,6 +107,32 @@ changes. Click the *Commit* button.
 Close the commit windows that appear.
 
 Commit your work often.
+
+## pull from and push to the fork
+
+When the assistant is ready to synchronize their work, first do a final
+commit if there are any unstaged changes.
+
+Next, pull from the fork (the assistant’s primary repo) by clicking
+*Pull* in
+
+-   the Review Changes window, or
+-   under the Git tab
+
+![](../resources/git-collab-011.png)
+
+A *Git Pull* window appears. The message will describe changes since the
+last time you pulled from the fork.
+
+Select *Push* to send your changes to your GitHub repo (not the main
+project repo). A *Git Push* window appears with a message on the status
+of the push. You can close the window.
+
+To confirm that your changes have been correctly pushed, navigate to the
+GitHub fork. You should find that the remote repository contains your
+recent edits.
+
+## pull request
 
 ------------------------------------------------------------------------
 

@@ -1,6 +1,11 @@
 using version control to share work
 ================
 
+![](../resources/network.jpg) <small> <br> <i>Network</i> by gritphilm
+is licensed under
+<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC
+BY-NC-ND 2.0</a> <br> </small>
+
 We start by assuming an **author** has created an RStudio “project” on
 their local machine and has linked it to a GitHub repository (a “repo”).
 The author is ready to invite a **co-author** to collaborate. Both

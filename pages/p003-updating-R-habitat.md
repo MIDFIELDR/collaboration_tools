@@ -1,6 +1,11 @@
 updating the R habitat
 ================
 
+![](../resources/habitat.jpg) <small> <br> <i>Habitat</i> by Kylie
+Jaxxon is licensed under
+<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
+BY-SA 2.0</a> <br> </small>
+
 If you already have R and RStudio installed, please update to the most
 recent releases and update your R packages as well.
 

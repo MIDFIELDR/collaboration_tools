@@ -1,6 +1,8 @@
 installing software
 ================
 
+![](../resources/header-install-software.png)
+
 Before you can collaborate using GitHub, both you and your collaborator
 have to install software and setup accounts as follows.
 

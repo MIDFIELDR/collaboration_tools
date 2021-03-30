@@ -17,7 +17,8 @@ BY-SA 2.0</a> <br> </small>
 -   [Installing software](pages/p001-install-software.md) R, RStudio,
     git, and GitHub
 -   [Using version control to share
-    work](pages/p002-admin-collaboration.md)
+    work](pages/p002-admin-collaboration.md) amongst the project
+    directors
 -   [Sharing work with
     assistants](pages/p004-non-admin-collaboration.md)
 

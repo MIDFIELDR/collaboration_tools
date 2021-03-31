@@ -23,8 +23,9 @@ administrator) before acceptance.
 -   [Synchronizing the work](#synchronizing-the-work)
 -   [Branch](#branch)
 -   [Commit](#commit)  
--   [Pull from and push to the fork](#pull-from-and-push-to-the-fork)
+-   [Fork pull and push](#fork-pull-and-push)
 -   [Pull request](#pull-request)
+-   [Get upstream changes for a fork](#get-upstream-changes-for-a-fork)
 
 ## author’s initial tasks
 
@@ -77,21 +78,34 @@ the main project repo where it is reviewed before acceptance.
 
 ## branch
 
-Because you will be submitting changes to the project owners for review,
-they will be happier to receive your pull request from a non-main
-branch.
+**Avoid** making edits to the **main** branch. Because you will be
+submitting changes to the project directors for review, they will be
+happier to receive your pull request from a non-main branch.
 
 Therefore, before beginning any work on your copy of the project, work
-in a new branch, not the main branch.
+in a new branch, not the main branch. In RStudio, under the Git tab,
+click *New branch*.
 
-<!-- If you make any commits in your local repository, I strongly recommend that you work in a new branch, not master. -->
-<!-- I strongly recommend that you do not make commits to master of a repo you have forked. -->
-<!-- This will make your life much easier if you want to pull upstream work into your copy. The OWNER of REPO will also be happier to receive your pull request from a non-master branch. -->
+![](../resources/git-collab-012.png)
+
+In the dialog box, give your branch a short descriptive name, e.g., if I
+were working on a new function called `new_function()`:
+
+![](../resources/git-collab-013.png)
+
+The “remote” box should say `origin` to synch with the assistant’s
+remote repo on GitHub. Click *Create.*
+
+Note the change in the Git tab. The branch is now `new_function`.
+
+![](../resources/git-collab-014.png)
+
+Before making any changes, ensure you are working in the new branch.
 
 ## commit
 
-Let’s assume you have edited the project files on your local machine. In
-RStudio, select the Git tab, for example,
+Let’s assume you have edited the project files on your local machine,
+working in the new branch. In RStudio, select the Git tab, for example,
 
 ![](../resources/git-collab-006.png)
 
@@ -108,16 +122,15 @@ Close the commit windows that appear.
 
 Commit your work often.
 
-## pull from and push to the fork
+## fork pull and push
 
 When the assistant is ready to synchronize their work, first do a final
 commit if there are any unstaged changes.
 
-Next, pull from the fork (the assistant’s primary repo) by clicking
-*Pull* in
+Next, pull from the fork (the assistant’s primary repo) by
 
--   the Review Changes window, or
--   under the Git tab
+-   clicking *Pull* in the Review Changes window, or
+-   clicking *Pull* under the Git tab
 
 ![](../resources/git-collab-011.png)
 
@@ -133,6 +146,18 @@ GitHub fork. You should find that the remote repository contains your
 recent edits.
 
 ## pull request
+
+Your local repo and your primary repo are now in synch. To submit your
+proposed edits to the main project team, you initiate a *pull request*.
+
+Navigate to your remote repo (“origin”) on GitHub, e.g.,
+
+![](../resources/git-collab-015.png)
+
+-   Select the \*Pull requests" tab
+-   Click the green *New pull request* button
+
+## get upstream changes for a fork
 
 ------------------------------------------------------------------------
 

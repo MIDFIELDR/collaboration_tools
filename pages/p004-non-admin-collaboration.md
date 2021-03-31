@@ -23,7 +23,7 @@ administrator) before acceptance.
 -   [Synchronizing the work](#synchronizing-the-work)
 -   [Branch](#branch)
 -   [Commit](#commit)  
--   \[Pull from and push to the fork\]
+-   [Fork pull and push](#fork-pull-and-push)
 -   [Pull request](#pull-request)
 -   [Get upstream changes for a fork](#get-upstream-changes-for-a-fork)
 
@@ -81,6 +81,7 @@ the main project repo where it is reviewed before acceptance.
 **Avoid** making edits to the **main** branch. Because you will be
 submitting changes to the project directors for review, they will be
 happier to receive your pull request from a non-main branch.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 
 Therefore, before beginning any work on your copy of the project, work
 in a new branch, not the main branch. In RStudio, under the Git tab,
@@ -102,10 +103,33 @@ Note the change in the Git tab. The branch is now `new_function`.
 
 Before making any changes, ensure you are working in the new branch.
 
+=======
+
+Therefore, before beginning any work on your copy of the project, work
+in a new branch, not the main branch. In RStudio, under the Git tab,
+click *New branch*.
+
+![](../resources/git-collab-012.png)
+
+In the dialog box, give your branch a short descriptive name, e.g., if I
+were working on a new function called `new_function()`:
+
+![](../resources/git-collab-013.png)
+
+The “remote” box should say `origin` to synch with the assistant’s
+remote repo on GitHub. Click *Create.*
+
+Note the change in the Git tab. The branch is now `new_function`.
+
+![](../resources/git-collab-014.png)
+
+Before making any changes, ensure you are working in the new branch.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; new\_function
+
 ## commit
 
-Let’s assume you have edited the project files on your local machine. In
-RStudio, select the Git tab, for example,
+Let’s assume you have edited the project files on your local machine,
+working in the new branch. In RStudio, select the Git tab, for example,
 
 ![](../resources/git-collab-006.png)
 
@@ -158,6 +182,9 @@ Navigate to your remote repo (“origin”) on GitHub, e.g.,
 -   Click the green *New pull request* button
 
 ## get upstream changes for a fork
+
+If you are planning on continuing to work on the project, you want to be
+able to update your working copy from the original source files.
 
 ------------------------------------------------------------------------
 

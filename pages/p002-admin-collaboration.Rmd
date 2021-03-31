@@ -1,8 +1,9 @@
 ---
 title: "using version control to share work"
 output: github_document
-editor_options: 
-  chunk_output_type: console
+bibliography: "../resources/references.bib"
+csl: "../resources/journal-of-glaciology.csl"
+link-citations: yes
 ---
 
 ```{r echo = FALSE, message = FALSE}
@@ -31,6 +32,8 @@ knit_hooks$set(inline = function(x) {
 We start by assuming an **author** has created an RStudio "project" on their local machine and has linked it to a GitHub repository (a "repo"). The author is ready to invite a **co-author** to collaborate. Both author and co-author should have completed the [Installing software](p001-install-software.md) instructions.
 
 In this approach, author and co-authors all have permission to make changes without prior approval by another author. 
+
+These guidelines are adapted from "Happy Git and GitHub for the useR"  [@Bryan+Hester:2021]. This is the reference to turn to first for help and all the details.
 
 
 
@@ -143,6 +146,10 @@ To confirm that your changes have been correctly pushed, navigate to the GitHub 
 
 
 
+
+## references
+
+<div id="refs"></div>
 
 
 

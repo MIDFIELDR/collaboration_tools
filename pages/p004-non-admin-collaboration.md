@@ -16,9 +16,20 @@ In this approach, the assistant’s work is submitted to the project as a
 pull request that requires review by the author (or other project
 administrator) before acceptance.
 
+These guidelines are adapted from “Happy Git and GitHub for the useR”
+([Bryan and Hester, 2021](#ref-Bryan+Hester:2021)). This is the
+reference to turn to first for help and all the details.
+
 ## contents
 
+Author’s tasks
+
 -   [Author’s initial tasks](#authors-initial-tasks)
+-   [Author responds to a pull
+    request](#author-responds-to-a-pull-request)
+
+Assistant’s tasks
+
 -   [Assistant’s initial tasks](#assistants-initial-tasks)
 -   [Synchronizing the work](#synchronizing-the-work)
 -   [Branch](#branch)
@@ -31,6 +42,32 @@ administrator) before acceptance.
 
 -   Make the GitHub repo public  
 -   Provide the repo URL to the assistant
+
+## author responds to a pull request
+
+Someone submitting a pull request to the project is proposing changes
+and requesting that someone review and pull in their contribution and
+merge them into the main branch. Pull requests show differences
+(“diffs”) of the content from both branches.
+
+If a project assistant is working according to the suggested workflow,
+they performed a fork-and-clone and have edited their copy of the
+project files using a new branch (not the main branch). They then submit
+a pull request.
+
+The author (or any owner/maintainer) reviews the proposed changes and
+merges selected changes into the main branch.
+
+There are a number of approaches to reviewing and accepting pull
+requests. Please refer to a reference of your choosing to learn the
+procedure. I suggest:
+
+-   [Reviewing a pull
+    request](https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html#reviewing)
+    by Michael Ernst
+-   [Explore and extend a pull
+    request](https://happygitwithr.com/pr-extend.html) by Jenny Bryan
+    and Jim Hester
 
 ## assistant’s initial tasks
 
@@ -81,7 +118,6 @@ the main project repo where it is reviewed before acceptance.
 **Avoid** making edits to the **main** branch. Because you will be
 submitting changes to the project directors for review, they will be
 happier to receive your pull request from a non-main branch.
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 
 Therefore, before beginning any work on your copy of the project, work
 in a new branch, not the main branch. In RStudio, under the Git tab,
@@ -90,7 +126,7 @@ click *New branch*.
 ![](../resources/git-collab-012.png)
 
 In the dialog box, give your branch a short descriptive name, e.g., if I
-were working on a new function called `new_function()`:
+were working on a new function called `new_function`:
 
 ![](../resources/git-collab-013.png)
 
@@ -102,29 +138,7 @@ Note the change in the Git tab. The branch is now `new_function`.
 ![](../resources/git-collab-014.png)
 
 Before making any changes, ensure you are working in the new branch.
-
-=======
-
-Therefore, before beginning any work on your copy of the project, work
-in a new branch, not the main branch. In RStudio, under the Git tab,
-click *New branch*.
-
-![](../resources/git-collab-012.png)
-
-In the dialog box, give your branch a short descriptive name, e.g., if I
-were working on a new function called `new_function()`:
-
-![](../resources/git-collab-013.png)
-
-The “remote” box should say `origin` to synch with the assistant’s
-remote repo on GitHub. Click *Create.*
-
-Note the change in the Git tab. The branch is now `new_function`.
-
-![](../resources/git-collab-014.png)
-
-Before making any changes, ensure you are working in the new branch.
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; new\_function
+Each pull request should have a unique branch name.
 
 ## commit
 
@@ -183,8 +197,45 @@ Navigate to your remote repo (“origin”) on GitHub, e.g.,
 
 ## get upstream changes for a fork
 
-If you are planning on continuing to work on the project, you want to be
-able to update your working copy from the original source files.
+If the assistant is planning on continuing to work on the project, they
+want to be able to update their working copy from the original source
+files. Assigning the main project repo as an “upstream” remote permits
+them to pull from the source files to their local machine.
+
+![](../resources/git-collab-017.png)
+
+The first time you do this, in the RStudio Git tab,
+
+-   click *New Branch*
+-   type `main` for the branch name
+-   click *Add remote…*
+-   type `upstream` for the remote name
+-   type the URL of the main project for the remote URL
+-   then *Add* and *Create*
+
+![](../resources/git-collab-016.png)
+
+In subsequent iterations, you do not have to add the remote—it already
+exists. You should be able to select `main` as the branch name and
+`upstream` from the remote pulldown menu to update your local project.
+
+Finally, before doing anything else, switch to the `origin` branch,
+commit, and push the project to your own remote repo. Now your local
+repo and your remote repo should be identical to the latest version of
+the source repo.
+
+## references
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-Bryan+Hester:2021" class="csl-entry">
+
+Bryan J and Hester J (2021) <span class="nocase">Happy Git and GitHub
+for the useR</span>. <https://happygitwithr.com/>
+
+</div>
+
+</div>
 
 ------------------------------------------------------------------------
 

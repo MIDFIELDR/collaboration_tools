@@ -15,6 +15,10 @@ software](p001-install-software.md) instructions.
 In this approach, author and co-authors all have permission to make
 changes without prior approval by another author.
 
+These guidelines are adapted from “Happy Git and GitHub for the useR”
+([Bryan and Hester, 2021](#ref-Bryan+Hester:2021)). This is the
+reference to turn to first for help and all the details.
+
 ## contents
 
 -   [Author’s initial tasks](#authors-initial-tasks)
@@ -122,6 +126,19 @@ window.
 To confirm that your changes have been correctly pushed, navigate to the
 GitHub repo. You should find that the remote repository contains your
 recent edits.
+
+## references
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-Bryan+Hester:2021" class="csl-entry">
+
+Bryan J and Hester J (2021) <span class="nocase">Happy Git and GitHub
+for the useR</span>. <https://happygitwithr.com/>
+
+</div>
+
+</div>
 
 ------------------------------------------------------------------------
 

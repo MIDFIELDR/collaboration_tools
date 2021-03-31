@@ -7,6 +7,7 @@
 .Rapp.history
 .RData
 .Rproj.user/
+.Renviron
 
 # project files not version controlled
 manage

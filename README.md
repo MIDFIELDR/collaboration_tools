@@ -23,8 +23,10 @@ R basics
 
 -   [Getting started in R: Tinyverse
     edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf)
-    A short tutorial overview of the key concepts of R ([Bashir and
-    Eddelbuettel, 2018](#ref-Bashir+Eddelbuettel:2018))
+    A short tutorial overview of the key concepts of R relying on only
+    two additional packages: data.table for data carpentry and ggplot2
+    for visualization ([Bashir and Eddelbuettel,
+    2018](#ref-Bashir+Eddelbuettel:2018)).
 
 Collaborating
 

@@ -57,9 +57,13 @@ in R: Tinyverse edition</span>.
 
 </div>
 
-------------------------------------------------------------------------
+## revisions
 
-Revisions
+<small>
 
--   2021-04-02 R. Layton: Add Tinyverse link
--   2021-03-31 R. Layton: Launch repo
+| Date       | Item               | By        |
+|:-----------|:-------------------|:----------|
+| 2021-04-02 | Add Tinyverse link | R. Layton |
+| 2021-03-31 | Launch repo        | R. Layton |
+
+</small>

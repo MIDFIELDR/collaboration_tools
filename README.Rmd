@@ -6,7 +6,8 @@ link-citations: yes
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library("knitr")
+opts_chunk$set(echo = FALSE)
 ```
 
 # MIDFIELD handbook <span class="border-wrap"><img src="resources/midfieldcut-1368x328.jpg" align="right" height="55" width="229" alt="logo.png"></span>
@@ -50,9 +51,15 @@ Collaborating
 <div id="refs"></div>
 
 
-***
-Revisions 
-
-
-- 2021-04-02 R. Layton: Add Tinyverse link
-- 2021-03-31 R. Layton: Launch repo
+## revisions
+<small>
+```{r}
+df <- wrapr::build_frame(
+  "Date", "Item", "By" |
+    "2021-04-02", "Add Tinyverse link", "R. Layton" |
+    "2021-03-31", "Launch repo", "R. Layton" 
+  
+)
+kable(df)
+```
+</small>

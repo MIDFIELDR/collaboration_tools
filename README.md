@@ -12,18 +12,21 @@ BY-SA 2.0</a> <br> </small>
 
 ## contents
 
-Getting started
+Software
 
--   [Updating the R habitat](pages/p003-updating-R-habitat.md) If you
-    already have R and RStudio installed
 -   [Installing software](pages/p001-install-software.md) R, RStudio,
     git, and GitHub
+-   [Updating the R habitat](pages/p003-updating-R-habitat.md) If you
+    already have R and RStudio installed
+
+R basics
+
 -   [Getting started in R: Tinyverse
     edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf)
     A short tutorial overview of the key concepts of R ([Bashir and
     Eddelbuettel, 2018](#ref-Bashir+Eddelbuettel:2018))
 
-Collaborating using GitHub for version control
+Collaborating
 
 -   [Using version control to share
     work](pages/p002-admin-collaboration.md) amongst the project

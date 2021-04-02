@@ -16,9 +16,9 @@ In this approach, the assistant’s work is submitted to the project as a
 pull request that requires review by the author (or other project
 administrator) before acceptance.
 
-These guidelines are adapted from “Happy Git and GitHub for the useR”
-([Bryan and Hester, 2021](#ref-Bryan+Hester:2021)). This is the
-reference to turn to first for help and all the details.
+If you want to learn more about using git and GitHub, see “Happy Git and
+GitHub for the useR” ([Bryan and Hester, 2021](#ref-Bryan+Hester:2021))
+from which I adapted most of this tutorial.
 
 ## contents
 

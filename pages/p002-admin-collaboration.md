@@ -15,9 +15,9 @@ software](p001-install-software.md) instructions.
 In this approach, author and co-authors all have permission to make
 changes without prior approval by another author.
 
-These guidelines are adapted from “Happy Git and GitHub for the useR”
-([Bryan and Hester, 2021](#ref-Bryan+Hester:2021)). This is the
-reference to turn to first for help and all the details.
+If you want to learn more about using git and GitHub, see “Happy Git and
+GitHub for the useR” ([Bryan and Hester, 2021](#ref-Bryan+Hester:2021))
+from which I adapted most of this tutorial.
 
 ## contents
 

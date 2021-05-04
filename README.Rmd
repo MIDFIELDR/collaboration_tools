@@ -66,6 +66,7 @@ Data
 ```{r}
 df <- wrapr::build_frame(
   "Date", "Item", "By" |
+    "2021-0-04", "Add prepared data page", "R. Layton" |
     "2021-04-02", "Add Tinyverse link", "R. Layton" |
     "2021-03-31", "Launch repo", "R. Layton" 
   

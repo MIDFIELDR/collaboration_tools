@@ -68,9 +68,10 @@ in R: Tinyverse edition</span>.
 
 <small>
 
-| Date       | Item               | By        |
-|:-----------|:-------------------|:----------|
-| 2021-04-02 | Add Tinyverse link | R. Layton |
-| 2021-03-31 | Launch repo        | R. Layton |
+| Date       | Item                   | By        |
+|:-----------|:-----------------------|:----------|
+| 2021-0-04  | Add prepared data page | R. Layton |
+| 2021-04-02 | Add Tinyverse link     | R. Layton |
+| 2021-03-31 | Launch repo            | R. Layton |
 
 </small>

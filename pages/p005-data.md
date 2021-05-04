@@ -12,6 +12,12 @@ construct the figures. The published figure is shown accompanied by a
 link to the CSV data file. Figures are organized by the paper in which
 they appeared.
 
+To download a data file:
+
+-   Follow the link to see the data in HTML format
+-   Right-click on the “Raw” icon &gt; *Save link as …* to download the
+    file
+
 ## 2019 JEE
 
 Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV

@@ -8,9 +8,9 @@ BY-SA 2.0</a> <br> </small>
 
 This page provides access to data underlying selected displays published
 by the MIDFIELD team. The data are in the prepared form used to
-construct the figures. The published figure is shown accompanied by a
-link to the CSV data file. Figures are organized by the paper in which
-they appeared.
+construct the figures. The figure is shown accompanied by a link to the
+CSV data file. Figures are organized by the paper in which they
+appeared.
 
 To download a data file:
 
@@ -23,7 +23,9 @@ To download a data file:
 Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV
 data file [(link)](../data/2019-jee-figure-4-data.csv).
 
-<img src="../resources/fig004-grad-rate.png" width="60%"/>
+<img src="../resources/fig004-grad-rate.png" width="20%"/>
+<!-- <small><br>&#169; 2019 Journal of Engineering Education.  -->
+<!-- <br></small> -->
 
 ## references
 

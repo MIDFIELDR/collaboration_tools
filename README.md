@@ -38,8 +38,8 @@ Collaborating
 
 Data
 
--   Selected figures from publications with links to CSV files of data
-    used to produce the figures
+-   [Prepared data](pages/p005-data.md) for selected published figures
+    with links to CSV data files
 
 ## resources
 

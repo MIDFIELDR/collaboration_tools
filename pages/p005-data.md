@@ -15,9 +15,9 @@ they appeared.
 ## 2019 JEE
 
 Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV
-data file [(link)](data/2019-jee-figure-4-data.csv).
+data file [(link)](../data/2019-jee-figure-4-data.csv).
 
-<img src="../resources/fig004-grad-rate.png" width="70%"/>
+<img src="../resources/fig004-grad-rate.png" width="60%"/>
 
 ## references
 

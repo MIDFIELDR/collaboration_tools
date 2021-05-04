@@ -1,31 +1,29 @@
-prepared data
-================
+---
+title: "prepared data"
+bibliography: "../resources/midfield-references.bib"
+csl: "../resources/journal-of-glaciology.csl"
+link-citations: yes
+output: 
+  md_document:
+    pandoc_args: ["--wrap=none"]
+    variant: gfm
+    preserve_yaml: TRUE
+---
 
-![](../resources/data-image-rev.png) <small> <br> <i>Warm data</i> by
-beachmobjellies is licensed under
-<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
-BY-SA 2.0</a> <br> </small>
+![](../resources/data-image-rev.png) <small> <br> <i>Warm data</i> by beachmobjellies is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a> <br> </small>
 
-This page provides access to data underlying selected displays published
-by the MIDFIELD team. The data are in the prepared form used to
-construct the figures. The figure is shown accompanied by a link to the
-CSV data file. Figures are organized by the paper in which they
-appeared.
+This page provides access to data underlying selected displays published by the MIDFIELD team. The data are in the prepared form used to construct the figures. The figure is shown accompanied by a link to the CSV data file. Figures are organized by the paper in which they appeared.
 
 To download a data file:
 
 -   Follow the link to see the data in HTML format
--   Right-click on the “Raw” icon &gt; *Save link as …* to download the
-    file
+-   Right-click on the “Raw” icon &gt; *Save link as …* to download the file
 
 ## 2019 JEE
 
-Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV
-data file [(link)](../data/2019-jee-figure-4-data.csv).
+Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
 
-<img src="../resources/fig004-grad-rate.png" width="20%"/>
-<!-- <small><br>&#169; 2019 Journal of Engineering Education.  -->
-<!-- <br></small> -->
+<img src="../resources/fig004-grad-rate.png" width="20%"/> <!-- <small><br>&#169; 2019 Journal of Engineering Education.  --> <!-- <br></small> -->
 
 ## references
 
@@ -33,9 +31,7 @@ data file [(link)](../data/2019-jee-figure-4-data.csv).
 
 <div id="ref-Lord+Ohland+Layton+Camacho:2019" class="csl-entry">
 
-Lord SM, Ohland MW, Layton RA and Camacho MM <span class="nocase">Beyond
-pipeline and pathways: Ecosystem metrics</span>. *Journal of Engineering
-Education* **108**(1), 32–56 (doi:<https://doi.org/10.1002/jee.20250>)
+Lord SM, Ohland MW, Layton RA and Camacho MM <span class="nocase">Beyond pipeline and pathways: Ecosystem metrics</span>. *Journal of Engineering Education* **108**(1), 32–56 (doi:<https://doi.org/10.1002/jee.20250>)
 
 </div>
 

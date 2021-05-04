@@ -1,16 +1,22 @@
 ---
 title: "prepared data"
-output: github_document
 bibliography: "../resources/midfield-references.bib"
 csl: "../resources/journal-of-glaciology.csl"
 link-citations: yes
+output: 
+  md_document:
+    pandoc_args: ["--wrap=none"]
+    variant: gfm
+    preserve_yaml: TRUE
 ---
 
 ```{r echo = FALSE, message = FALSE}
+library(here)
+source(here::here("rmd_config.R"))
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 opts_chunk$set(collapse = TRUE, comment = "#>")
-opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE) 
+opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE, cache = FALSE) 
 knit_hooks$set(inline = function(x) {
 	if (!is.numeric(x)) { 
 		x 

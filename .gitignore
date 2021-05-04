@@ -11,6 +11,7 @@
 
 # project files not version controlled
 manage
+rmd_config.R
 
 # raw data files not version controlled
 data-raw

@@ -1,5 +1,5 @@
 
-# MIDFIELD handbook <span class="border-wrap"><img src="resources/midfieldcut-1368x328.jpg" align="right" height="55" width="229" alt="logo.png"></span>
+# midfieldr handbook <span class="border-wrap"><img src="resources/midfieldcut-1368x328.jpg" align="right" height="55" width="229" alt="logo.png"></span>
 
 The purpose of this handbook is to share tips and tools with members of
 the team to facilitate more effective collaboration using R, RStudio,

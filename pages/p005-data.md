@@ -17,7 +17,7 @@ they appeared.
 Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV
 data file [(link)](data/2019-jee-figure-4-data.csv).
 
-<img src="C:\Users\layto\Documents\collaboration_tools\resources\fig004-grad-rate.png" width="70%" />
+<img src="../resources/fig004-grad-rate.png" width="70%"/>
 
 ## references
 

@@ -3,16 +3,19 @@ title: "prepared data"
 bibliography: "../resources/midfield-references.bib"
 csl: "../resources/journal-of-glaciology.csl"
 link-citations: yes
-output: 
-  md_document:
-    pandoc_args: ["--wrap=none"]
-    variant: gfm
-    preserve_yaml: TRUE
+output: github_document
 ---
+
+<!-- output:  -->
+<!--   md_document: -->
+<!--     pandoc_args: ["--wrap=none"] -->
+<!--     variant: gfm -->
+<!--     preserve_yaml: TRUE -->
 
 ```{r echo = FALSE, message = FALSE}
 library(here)
 source(here::here("rmd_config.R"))
+
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 opts_chunk$set(collapse = TRUE, comment = "#>")

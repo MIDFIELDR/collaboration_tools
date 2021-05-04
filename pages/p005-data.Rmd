@@ -55,7 +55,7 @@ library(png)
 Figure 4 [@Lord+Ohland+Layton+Camacho:2019]. CSV data file [(link)](data/2019-jee-figure-4-data.csv).
 
 ```{r out.width = "70%"}
-include_graphics(normalizePath("resources/fig004-grad-rate.png"))
+include_graphics("resources/fig004-grad-rate.png")
 ```
 
 

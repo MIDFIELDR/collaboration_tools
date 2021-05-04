@@ -22,6 +22,12 @@ knit_hooks$set(inline = function(x) {
 	})
 ```
 
+```{r}
+library(data.table)
+df <- fread("data/2019-jee-figure-4-data.csv")
+df$disc_median <- round(df$disc_median, 1)
+fwrite(df, file = "data/2019-jee-figure-4-data.csv")
+```
 
 ```{r include = FALSE}
 library(graphclassmate)
@@ -43,12 +49,6 @@ image_write(img,
 </small>
 
 This page provides access to data underlying selected displays published by the MIDFIELD team. The data are in the prepared form used to construct the figures. The published figure is shown accompanied by a link to the CSV data file. Figures are organized by the paper in which they appeared. 
-
-```{r}
-library(data.table)
-library(png)
-```
-
 
 ## 2019 JEE
 

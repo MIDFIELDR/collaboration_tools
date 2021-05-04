@@ -1,0 +1,73 @@
+---
+title: "prepared data"
+output: github_document
+bibliography: "../resources/midfield-references.bib"
+csl: "../resources/journal-of-glaciology.csl"
+link-citations: yes
+---
+
+```{r echo = FALSE, message = FALSE}
+library(knitr)
+opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+opts_chunk$set(collapse = TRUE, comment = "#>")
+opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE) 
+knit_hooks$set(inline = function(x) {
+	if (!is.numeric(x)) { 
+		x 
+		} else if (x >= 10000) { 
+		prettyNum(round(x, 2), big.mark = ",")
+		} else {
+		prettyNum(round(x, 2))
+		}
+	})
+```
+
+
+```{r include = FALSE}
+library(graphclassmate)
+library(magick)
+# read image
+img <- image_read("resources/data-image-2.jpg")
+img <- image_scale(img, "791x180!")
+img
+image_write(img, 
+        path = "resources/data-image-rev.png", 
+        format = "png")
+```
+
+![](../resources/data-image-rev.png)
+<small>
+<br>
+<i>Warm data</i> by beachmobjellies is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>
+<br>
+</small>
+
+This page provides access to data underlying selected displays published by the MIDFIELD team. The data are in the prepared form used to construct the figures. The published figure is shown accompanied by a link to the CSV data file. Figures are organized by the paper in which they appeared. 
+
+```{r}
+library(data.table)
+library(png)
+```
+
+
+## 2019 JEE
+
+Figure 4 [@Lord+Ohland+Layton+Camacho:2019]. CSV data file [(link)](data/2019-jee-figure-4-data.csv).
+
+```{r out.width = "70%"}
+include_graphics(normalizePath("resources/fig004-grad-rate.png"))
+```
+
+
+
+
+
+## references
+
+<div id="refs"></div>
+
+
+
+***
+<a href="#top">&#9650; top of page</a>    
+[&#9665; main page](../README.md)

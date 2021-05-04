@@ -31,12 +31,22 @@ Software
 
 R basics
 
-- [Getting started in R: Tinyverse edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf) A short tutorial overview of the key concepts of R relying on only two additional packages: data.table for data carpentry  and ggplot2 for visualization [@Bashir+Eddelbuettel:2018].
+- [Getting started in R: Tinyverse edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf) A short tutorial overview of the key concepts of R relying on only two additional packages: data.table for data carpentry  and ggplot2 for visualization [@Bashir+Eddelbuettel:2018]. 
 
 Collaborating
 
 - [Using version control to share work](pages/p002-admin-collaboration.md) amongst the project directors
 - [Sharing work with assistants](pages/p004-non-admin-collaboration.md)
+
+Data 
+
+- Selected figures from publications with links to CSV files of data used to produce the figures
+
+
+
+
+
+
 
 
 ## resources

@@ -36,6 +36,11 @@ Collaborating
 -   [Sharing work with
     assistants](pages/p004-non-admin-collaboration.md)
 
+Data
+
+-   Selected figures from publications with links to CSV files of data
+    used to produce the figures
+
 ## resources
 
 -   [MIDFIELD](https://engineering.purdue.edu/MIDFIELD) main project

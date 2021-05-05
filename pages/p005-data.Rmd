@@ -74,8 +74,6 @@ setnames(df, old = c("disc", "disc_median"),
 df[, race_ethnicity_sex := paste(race_ethnicity, sex)]
 setcolorder(df, c("discipline", "race_ethnicity_sex"))
 df[, `:=` (race_ethnicity = NULL, sex = NULL)]
-setnames(df, old = c("race_ethnicity_sex"), 
-         new = c("race/ethnicity/sex"))
 fwrite(df, file = "data/2019-jee-figure-4-data.csv")
 ```
 
@@ -102,6 +100,8 @@ Figure 8. CSV data file [(link)](../data/2019-jee-figure-8-data.csv).
 df <- fread("data-raw/2019-jee-figure-8-data.csv")
 cols_to_round<- c("dspn_stick", "dspn_median", "delta_stick", "delta_median")
 df[, (cols_to_round) := round(.SD, 1), .SDcols = c(cols_to_round)]
+setnames(df, old = c("race/ethnicity/sex"), 
+         new = c("race_ethnicity_sex"))
 fwrite(df, file = "data/2019-jee-figure-8-data.csv")
 ```
 

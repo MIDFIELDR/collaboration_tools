@@ -1,4 +1,4 @@
-discipline,race/ethnicity/sex,N_start,N_grad,grad_rate,dspn_median
+discipline,race_ethnicity_sex,N_start,N_grad,grad_rate,dspn_median
 Chemical,Asian Female,287,162,56.4,50.3
 Chemical,Asian Male,502,255,50.8,50.3
 Chemical,Black Female,922,387,42,50.3

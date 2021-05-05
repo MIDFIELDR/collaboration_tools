@@ -66,9 +66,17 @@ Reference [@Lord+Ohland+Layton+Camacho:2019]. All images :copyright: 2019 Journa
 Figure 4. CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
 
 ```{r echo = FALSE}
-# adjust significant digits 
+# adjust significant digits and edit columns
 df <- fread("data-raw/2019-jee-figure-4-data.csv")
 df$disc_median <- round(df$disc_median, 1)
+setnames(df, old = c("disc", "disc_median"), 
+         new = c("discipline", "dspn_median"))
+df[, race_ethnicity_sex := paste(race_ethnicity, sex)]
+setcolorder(df, c("discipline", "race_ethnicity_sex"))
+df[, `:=` (race_ethnicity = NULL, sex = NULL)]
+setnames(df, old = c("race_ethnicity_sex"), 
+         new = c("race/ethnicity/sex"))
+df
 fwrite(df, file = "data/2019-jee-figure-4-data.csv")
 ```
 
@@ -92,9 +100,10 @@ Figure 8. CSV data file [(link)](../data/2019-jee-figure-8-data.csv).
 
 ```{r echo = FALSE}
 # adjust significant digits 
-df <- fread("data/2019-jee-figure-4-data.csv")
-df$disc_median <- round(df$disc_median, 1)
-fwrite(df, file = "data/2019-jee-figure-4-data.csv")
+df <- fread("data-raw/2019-jee-figure-8-data.csv")
+cols_to_round<- c("dspn_stick", "dspn_median", "delta_stick", "delta_median")
+df[, (cols_to_round) := round(.SD, 1), .SDcols = c(cols_to_round)]
+fwrite(df, file = "data/2019-jee-figure-8-data.csv")
 ```
 
 ```{r thumb-fig8, echo = FALSE}

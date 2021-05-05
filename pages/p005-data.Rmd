@@ -1,21 +1,15 @@
 ---
 title: "prepared data"
 bibliography: "../resources/midfield-references.bib"
-csl: "../resources/journal-of-glaciology.csl"
+csl: "../resources/ieee-transactions-on-education.csl"
 link-citations: yes
 output: github_document
+resource_files:
+  - ../rd_images/p005-data/thumb-fig4-1.png
 ---
 
-<!-- output:  -->
-<!--   md_document: -->
-<!--     pandoc_args: ["--wrap=none"] -->
-<!--     variant: gfm -->
-<!--     preserve_yaml: TRUE -->
 
 ```{r echo = FALSE, message = FALSE}
-library(here)
-source(here::here("rmd_config.R"))
-
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 opts_chunk$set(collapse = TRUE, comment = "#>")
@@ -32,25 +26,22 @@ knit_hooks$set(inline = function(x) {
 ```
 
 ```{r}
+# packages
+library(magick)
+library(graphclassmate)
 library(data.table)
-df <- fread("data/2019-jee-figure-4-data.csv")
-df$disc_median <- round(df$disc_median, 1)
-fwrite(df, file = "data/2019-jee-figure-4-data.csv")
 ```
 
-```{r include = FALSE}
-library(graphclassmate)
-library(magick)
-# read image
+```{r}
+# page header image
 img <- image_read("resources/data-image-2.jpg")
 img <- image_scale(img, "791x180!")
-img
-image_write(img, 
-        path = "resources/data-image-rev.png", 
+image_write(img,
+        path = "resources/data-image-2.png",
         format = "png")
 ```
 
-![](../resources/data-image-rev.png)
+![](../resources/data-image-2.png)
 <small>
 <br>
 <i>Warm data</i> by beachmobjellies is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>
@@ -66,11 +57,78 @@ To download a data file:
 
 ## 2019 JEE
 
-Figure 4 [@Lord+Ohland+Layton+Camacho:2019]. CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
+Reference [@Lord+Ohland+Layton+Camacho:2019]. All images :copyright: 2019 Journal of Engineering Education. 
 
-<img src="../resources/fig004-grad-rate.png" width="20%"/>
-<!-- <small><br>&#169; 2019 Journal of Engineering Education.  -->
-<!-- <br></small> -->
+
+
+
+
+Figure 4. CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
+
+```{r echo = FALSE}
+# adjust significant digits 
+df <- fread("data-raw/2019-jee-figure-4-data.csv")
+df$disc_median <- round(df$disc_median, 1)
+fwrite(df, file = "data/2019-jee-figure-4-data.csv")
+```
+
+```{r thumb-fig4, echo = FALSE}
+# create thumbnails
+img <- image_read("figures-raw/fig004-grad-rate.png")
+img <- image_scale(img, "10%")
+image_write(img,
+        path = "figures/thumbnail-fig004-grad-rate.png",
+        format = "png")
+```
+
+![](../figures/thumbnail-fig004-grad-rate.png)
+
+
+
+
+
+
+Figure 8. CSV data file [(link)](../data/2019-jee-figure-8-data.csv).
+
+```{r echo = FALSE}
+# adjust significant digits 
+df <- fread("data/2019-jee-figure-4-data.csv")
+df$disc_median <- round(df$disc_median, 1)
+fwrite(df, file = "data/2019-jee-figure-4-data.csv")
+```
+
+```{r thumb-fig8, echo = FALSE}
+# create thumbnails
+img <- image_read("figures-raw/fig008-stickiness.png")
+img <- image_scale(img, "10%")
+image_write(img,
+        path = "figures/thumbnail-fig008-stickiness.png",
+        format = "png")
+```
+
+![](../figures/thumbnail-fig008-stickiness.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## references

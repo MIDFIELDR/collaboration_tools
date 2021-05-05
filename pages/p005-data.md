@@ -1,13 +1,7 @@
 prepared data
 ================
 
-<!-- output:  -->
-<!--   md_document: -->
-<!--     pandoc_args: ["--wrap=none"] -->
-<!--     variant: gfm -->
-<!--     preserve_yaml: TRUE -->
-
-![](../resources/data-image-rev.png) <small> <br> <i>Warm data</i> by
+![](../resources/data-image-2.png) <small> <br> <i>Warm data</i> by
 beachmobjellies is licensed under
 <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
 BY-SA 2.0</a> <br> </small>
@@ -26,22 +20,28 @@ To download a data file:
 
 ## 2019 JEE
 
-Figure 4 ([Lord and others](#ref-Lord+Ohland+Layton+Camacho:2019)). CSV
-data file [(link)](../data/2019-jee-figure-4-data.csv).
+Reference [\[1\]](#ref-Lord+Ohland+Layton+Camacho:2019). All images
+:copyright: 2019 Journal of Engineering Education.
 
-<img src="../resources/fig004-grad-rate.png" width="20%"/>
-<!-- <small><br>&#169; 2019 Journal of Engineering Education.  -->
-<!-- <br></small> -->
+Figure 4. CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
+
+![](../figures/thumbnail-fig004-grad-rate.png)
+
+Figure 8. CSV data file [(link)](../data/2019-jee-figure-8-data.csv).
+
+![](../figures/thumbnail-fig008-stickiness.png)
 
 ## references
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body">
 
 <div id="ref-Lord+Ohland+Layton+Camacho:2019" class="csl-entry">
 
-Lord SM, Ohland MW, Layton RA and Camacho MM <span class="nocase">Beyond
-pipeline and pathways: Ecosystem metrics</span>. *Journal of Engineering
-Education* **108**(1), 32–56 (doi:<https://doi.org/10.1002/jee.20250>)
+<span class="csl-left-margin">\[1\] </span><span
+class="csl-right-inline">S. M. Lord, M. W. Ohland, R. A. Layton, and M.
+M. Camacho, “<span class="nocase">Beyond pipeline and pathways:
+Ecosystem metrics</span>,” *Journal of Engineering Education*, vol. 108,
+no. 1, pp. 32–56, doi: <https://doi.org/10.1002/jee.20250>.</span>
 
 </div>
 

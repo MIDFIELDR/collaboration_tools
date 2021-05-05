@@ -1,9 +1,8 @@
 
 # midfieldr handbook <span class="border-wrap"><img src="resources/midfieldcut-1368x328.jpg" align="right" height="55" width="229" alt="logo.png"></span>
 
-The purpose of this handbook is to share tips and tools with members of
-the team to facilitate more effective collaboration using R, RStudio,
-and GitHub.
+The purpose of this handbook is to share tips and tools to facilitate
+more effective collaboration.
 
 ![](resources/menard-county.jpg) <small> <br> <i>Menard County,
 Texas</i> by Matthew High is licensed under
@@ -70,7 +69,7 @@ in R: Tinyverse edition</span>.
 
 | Date       | Item                   | By        |
 |:-----------|:-----------------------|:----------|
-| 2021-0-04  | Add prepared data page | R. Layton |
+| 2021-05-04 | Add prepared data page | R. Layton |
 | 2021-04-02 | Add Tinyverse link     | R. Layton |
 | 2021-03-31 | Launch repo            | R. Layton |
 

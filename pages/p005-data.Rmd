@@ -1,7 +1,7 @@
 ---
 title: "prepared data"
 bibliography: "../resources/midfield-references.bib"
-csl: "../resources/ieee-transactions-on-education.csl"
+csl: "../resources/annual-review-of-statistics-and-its-application.csl"
 link-citations: yes
 output: github_document
 resource_files:
@@ -53,18 +53,21 @@ This page provides access to data underlying selected displays published by the 
 
 To download a data file: 
 
-- Follow the link to see the data in HTML format 
+- Follow the link to view the data in HTML format 
 - Right-click on the "Raw" icon > *Save link as ...* to download the file 
+
+
+
+
 
 ## 2019 JEE
 
 Reference [@Lord+Ohland+Layton+Camacho:2019]. All images `r sym("copyright")` 2019 Journal of Engineering Education. 
 
+**Figure 4**
 
-
-
-
-Figure 4. CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
+- Graduation rates of starters in a discipline grouped by race/ethnicity and sex 
+- data file [(link)](../data/2019-jee-figure-4-data.csv) 
 
 ```{r echo = FALSE}
 # adjust significant digits and edit columns
@@ -92,9 +95,11 @@ image_write(img,
 
 
 
+**Figure 8**
 
+- Stickiness of a discipline (left column) and the associated increase in stickiness (right column) for students ever in that discipline who graduate in any other major 
+- data [(link)](../data/2019-jee-figure-8-data.csv) 
 
-Figure 8. CSV data file [(link)](../data/2019-jee-figure-8-data.csv).
 
 ```{r echo = FALSE}
 # adjust significant digits 
@@ -118,17 +123,37 @@ image_write(img,
 ![](../figures/thumbnail-fig008-stickiness.png)
 
 
+**Figure 10**
+
+- Contour plot of migration yield as the product of the fraction of migrators attracted to a discipline (horizontal scale) and the fraction of those students graduating in the discipline (vertical scale).
+- data (link) placeholder
+- image thumbnail
 
 
 
 
 
+## 2011 JEE
 
+Reference [@Ohland+Brawner+Camacho+others:2011]. All images `r sym("copyright")` 2011 Journal of Engineering Education. 
 
+**Figure 1**
 
+- caption placeholder
+- data (link) placeholder
+- image thumbnail
 
+**Figure 2**
 
+- caption placeholder
+- data (link) placeholder
+- -image thumbnail
 
+**Figure 3**
+
+- caption placeholder
+- data (link) placeholder
+- image thumbnail
 
 
 

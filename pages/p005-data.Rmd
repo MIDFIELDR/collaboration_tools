@@ -76,7 +76,6 @@ setcolorder(df, c("discipline", "race_ethnicity_sex"))
 df[, `:=` (race_ethnicity = NULL, sex = NULL)]
 setnames(df, old = c("race_ethnicity_sex"), 
          new = c("race/ethnicity/sex"))
-df
 fwrite(df, file = "data/2019-jee-figure-4-data.csv")
 ```
 

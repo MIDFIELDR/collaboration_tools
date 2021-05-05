@@ -27,9 +27,10 @@ knit_hooks$set(inline = function(x) {
 
 ```{r}
 # packages
-library(magick)
-library(graphclassmate)
-library(data.table)
+library("magick")
+library("graphclassmate")
+library("data.table")
+library("r2symbols")
 ```
 
 ```{r}
@@ -57,7 +58,7 @@ To download a data file:
 
 ## 2019 JEE
 
-Reference [@Lord+Ohland+Layton+Camacho:2019]. All images :copyright: 2019 Journal of Engineering Education. 
+Reference [@Lord+Ohland+Layton+Camacho:2019]. All images `r sym("copyright")` 2019 Journal of Engineering Education. 
 
 
 

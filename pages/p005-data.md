@@ -21,7 +21,7 @@ To download a data file:
 ## 2019 JEE
 
 Reference [\[1\]](#ref-Lord+Ohland+Layton+Camacho:2019). All images
-:copyright: 2019 Journal of Engineering Education.
+&#169; 2019 Journal of Engineering Education.
 
 Figure 4. CSV data file [(link)](../data/2019-jee-figure-4-data.csv).
 

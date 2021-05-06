@@ -28,12 +28,13 @@ installed, we access its functionality via the RStudio interface. In the
 following guidelines, please read through an entire section before
 starting the installation.
 
--   [Git already
-    installed?](https://happygitwithr.com/install-git.html#git-already-installed)
--   [Windows](https://happygitwithr.com/install-git.html#install-git-windows)
+-   <a href="https://happygitwithr.com/install-git.html#git-already-installed" target="_blank">Git already installed?</a>
+-   <a href="https://happygitwithr.com/install-git.html#install-git-windows" target="_blank">Windows</a>
     install
--   [Mac OS](https://happygitwithr.com/install-git.html#macos) install
--   [Linux](https://happygitwithr.com/install-git.html#linux) install
+-   <a href="https://happygitwithr.com/install-git.html#macos" target="_blank">Mac OS</a>
+    install
+-   <a href="https://happygitwithr.com/install-git.html#linux" target="_blank">Linux</a>
+    install
 
 ## setup GitHub
 
@@ -44,9 +45,9 @@ Git-based projects—critically important for sharing with collaborators.
 Once you have a GitHub account, you will update your repositories using
 the RStudio interface.
 
--   [Join GitHub for teachers](https://education.github.com/teachers)
--   [Join GitHub for students](https://education.github.com/students)
--   [Join GitHub for everyone else](https://github.com/)
+-   <a href="https://education.github.com/teachers" target="_blank">Join GitHub for teachers</a>
+-   <a href="https://education.github.com/students" target="_blank">Join GitHub for students</a>
+-   <a href="https://github.com/" target="_blank">Join GitHub for everyone else</a>
 
 Once you have a GitHub account, do the following steps to make the
 connection between RStudio and GitHub fast and easy. Please read through
@@ -55,16 +56,13 @@ an entire step before starting that step.
 -   Some instructions ask you to type commands in the “shell”. To access
     the shell, open RStudio and use the pulldown menu *Tools &gt;
     Shell*.
--   [Introduce yourself to
-    Git](http://happygitwithr.com/hello-git.html#hello-git) using the
-    name and email you used with your GitHub account
--   [Cache your username and
-    password](http://happygitwithr.com/credential-caching.html#credential-caching)
+-   <a href="http://happygitwithr.com/hello-git.html#hello-git" target="_blank">Introduce yourself to Git</a>
+    using the name and email you used with your GitHub account
+-   <a href="http://happygitwithr.com/credential-caching.html#credential-caching" target="_blank">Cache your username and password</a>
     or so you do not need to authenticate yourself to GitHub
-    interactively ad nauseum. Alternatively, you can [set up SSH
-    keys](http://happygitwithr.com/ssh-keys.html#ssh-keys).
--   [Prove RStudio can find local
-    Git](http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github)
+    interactively ad nauseum. Alternatively, you can
+    <a href="http://happygitwithr.com/ssh-keys.html#ssh-keys" target="_blank">set up SSH keys</a>.
+-   <a href="http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github" target="_blank">Prove RStudio can find local Git</a>
     and, therefore, can talk to GitHub
 
 Cleanup

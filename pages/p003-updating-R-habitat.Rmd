@@ -3,6 +3,9 @@ title: "updating the R habitat"
 output: github_document
 editor_options: 
   chunk_output_type: console
+resource_files:
+  - ../resources/habitat.jpg
+  - ../resources/cm904-01.png
 ---
 
 ```{r echo = FALSE, message = FALSE}
@@ -34,7 +37,7 @@ If you already have R and RStudio installed, please update to the most recent re
 - Running old software can be considerably harder than running new software.
 - R updates about twice a year.
 - Get current at the start of a new project, but avoid updating if you are approaching a project deadline.
-- Read more about it at [Maintaining R](https://whattheyforgot.org/maintaining-r.html), a chapter in (Bryan and Hester, [2019](#ref-Bryan+Hester:2019)).
+- Read more about it at [Maintaining R](https://whattheyforgot.org/maintaining-r.html){target="_blank"}, a chapter in (Bryan and Hester, [2019](#ref-Bryan+Hester:2019)).
 
 
 
@@ -68,8 +71,7 @@ If *Check for Updates* does not appear in the menu,
 
   - Find the current version of RStudio from the menu *Help \> About
     RStudio*  
-  - Navigate to the [RStudio
-    website](https://www.rstudio.com/products/rstudio/#Desktop), find
+  - Navigate to the [RStudio website](https://www.rstudio.com/products/rstudio/#Desktop){target="_blank"}, find
     out what the current version is.
 
 If you decide to update RStudio, close RStudio on your machine, download

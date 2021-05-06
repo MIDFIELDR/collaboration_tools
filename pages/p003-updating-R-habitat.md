@@ -14,9 +14,9 @@ recent releases and update your R packages as well.
 -   R updates about twice a year.
 -   Get current at the start of a new project, but avoid updating if you
     are approaching a project deadline.
--   Read more about it at [Maintaining
-    R](https://whattheyforgot.org/maintaining-r.html), a chapter in
-    (Bryan and Hester, [2019](#ref-Bryan+Hester:2019)).
+-   Read more about it at
+    <a href="https://whattheyforgot.org/maintaining-r.html" target="_blank">Maintaining R</a>,
+    a chapter in (Bryan and Hester, [2019](#ref-Bryan+Hester:2019)).
 
 ## update R
 
@@ -50,9 +50,9 @@ If *Check for Updates* does not appear in the menu,
 
 -   Find the current version of RStudio from the menu *Help &gt; About
     RStudio*  
--   Navigate to the [RStudio
-    website](https://www.rstudio.com/products/rstudio/#Desktop), find
-    out what the current version is.
+-   Navigate to the
+    <a href="https://www.rstudio.com/products/rstudio/#Desktop" target="_blank">RStudio website</a>,
+    find out what the current version is.
 
 If you decide to update RStudio, close RStudio on your machine, download
 the new version, and run the `RStudio-n.n.n.exe` as an administrator

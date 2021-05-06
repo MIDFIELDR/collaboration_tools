@@ -4,6 +4,19 @@ output: github_document
 bibliography: "../resources/references.bib"
 csl: "../resources/journal-of-glaciology.csl"
 link-citations: yes
+editor_options: 
+  chunk_output_type: console
+resource_files:
+  - ../resources/network.jpg
+  - ../resources/git-collab-001.png
+  - ../resources/git-collab-002.png
+  - ../resources/git-collab-003.png
+  - ../resources/git-collab-004.png
+  - ../resources/git-collab-005.png
+  - ../resources/git-collab-006.png
+  - ../resources/git-collab-007.png
+  - ../resources/git-collab-008.png
+  - ../resources/git-collab-009.png
 ---
 
 ```{r echo = FALSE, message = FALSE}

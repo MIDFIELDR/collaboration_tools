@@ -31,7 +31,7 @@ Software
 
 R basics
 
-- [Getting started in R: Tinyverse edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf) A short tutorial overview of the key concepts of R relying on only two additional packages: data.table for data carpentry  and ggplot2 for visualization [@Bashir+Eddelbuettel:2018]. 
+- [Getting started in R: Tinyverse edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf){target="_blank"} A short tutorial overview of the key concepts of R relying on only two additional packages: data.table for data carpentry  and ggplot2 for visualization [@Bashir+Eddelbuettel:2018]. 
 
 Collaborating
 
@@ -51,9 +51,9 @@ Data
 
 ## resources
 
-- [MIDFIELD](https://engineering.purdue.edu/MIDFIELD) main project website 
-- [midfieldr](https://midfieldr.github.io/midfieldr/) An R package providing functions specialized for manipulating MIDFIELD data 
-- [midfielddata](https://midfieldr.github.io/midfielddata/) An R package with practice data 
+- [MIDFIELD](https://engineering.purdue.edu/MIDFIELD){target="_blank"} main project website 
+- [midfieldr](https://midfieldr.github.io/midfieldr/){target="_blank"} An R package providing functions specialized for manipulating MIDFIELD data 
+- [midfielddata](https://midfieldr.github.io/midfielddata/){target="_blank"} An R package with practice data 
 
 
 ## references

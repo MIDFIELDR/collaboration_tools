@@ -4,6 +4,24 @@ output: github_document
 bibliography: "../resources/references.bib"
 csl: "../resources/journal-of-glaciology.csl"
 link-citations: yes
+editor_options: 
+  chunk_output_type: console
+resource_files:
+  - ../resources/near-future.jpg
+  - ../resources/git-collab-001.png
+  - ../resources/git-collab-002.png
+  - ../resources/git-collab-004.png
+  - ../resources/git-collab-006.png
+  - ../resources/git-collab-007.png
+  - ../resources/git-collab-008.png
+  - ../resources/git-collab-010.png
+  - ../resources/git-collab-011.png
+  - ../resources/git-collab-012.png
+  - ../resources/git-collab-013.png
+  - ../resources/git-collab-014.png
+  - ../resources/git-collab-015.png
+  - ../resources/git-collab-016.png
+  - ../resources/git-collab-017.png 
 ---
 
 ```{r echo = FALSE, message = FALSE}
@@ -77,8 +95,8 @@ The author (or any owner/maintainer) reviews the proposed changes and merges  se
 There are a number of approaches to reviewing and accepting pull requests. Please refer to a reference of your choosing to learn the procedure. I suggest: 
 
 
-- [Reviewing a pull request](https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html#reviewing) by Michael Ernst 
-- [Explore and extend a pull request](https://happygitwithr.com/pr-extend.html)  by Jenny Bryan and Jim Hester
+- [Reviewing a pull request](https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html#reviewing){target="_blank"} by Michael Ernst 
+- [Explore and extend a pull request](https://happygitwithr.com/pr-extend.html){target="_blank"}  by Jenny Bryan and Jim Hester
 
 
 

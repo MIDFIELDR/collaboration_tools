@@ -3,6 +3,8 @@ title: "installing software"
 output: github_document
 editor_options: 
   chunk_output_type: console
+resource_files:
+  - ../resources/header-install-software.png
 ---
 
 ```{r echo = FALSE, message = FALSE}
@@ -24,13 +26,7 @@ knit_hooks$set(inline = function(x) {
 
 ![](../resources/header-install-software.png)
 
-
-
-
-
 Before you can collaborate using GitHub, both you and your collaborator have to install software and setup accounts as follows. 
-
-
 
 
 
@@ -59,10 +55,10 @@ Windows users may have to login as an Administrator before installing the softwa
 
 Both you and your collaborator install git on your local machines. Once installed, we access its functionality via the RStudio interface. In the following guidelines, please read through an entire section before starting the installation. 
 
-- [Git already installed?](https://happygitwithr.com/install-git.html#git-already-installed)
-- [Windows](https://happygitwithr.com/install-git.html#install-git-windows) install
-- [Mac OS](https://happygitwithr.com/install-git.html#macos) install
-- [Linux](https://happygitwithr.com/install-git.html#linux) install
+- [Git already installed?](https://happygitwithr.com/install-git.html#git-already-installed){target="_blank"} 
+- [Windows](https://happygitwithr.com/install-git.html#install-git-windows){target="_blank"} install
+- [Mac OS](https://happygitwithr.com/install-git.html#macos){target="_blank"} install
+- [Linux](https://happygitwithr.com/install-git.html#linux){target="_blank"} install
 
 
  
@@ -72,16 +68,16 @@ Both you and you collaborator need a GitHub account.
 
 GitHub is a hosting service that provides an online home for your Git-based projects—critically important for sharing with collaborators. Once you have a GitHub account, you will update your repositories using the RStudio interface.
 
-- [Join GitHub for teachers](https://education.github.com/teachers)
-- [Join GitHub for students](https://education.github.com/students)
-- [Join GitHub for everyone else](https://github.com/)
+- [Join GitHub for teachers](https://education.github.com/teachers){target="_blank"} 
+- [Join GitHub for students](https://education.github.com/students){target="_blank"} 
+- [Join GitHub for everyone else](https://github.com/){target="_blank"} 
 
 Once you have a GitHub account, do the following steps to make the connection between RStudio and GitHub fast and easy. Please read through an entire step  before starting that step.
 
 - Some instructions ask you to type commands in the “shell”. To access the shell, open RStudio and use the pulldown menu *Tools \> Shell*.
-- [Introduce yourself to Git](http://happygitwithr.com/hello-git.html#hello-git) using the name and email you used with your GitHub account
-- [Cache your username and password](http://happygitwithr.com/credential-caching.html#credential-caching) or so you do not need to authenticate yourself to GitHub interactively ad nauseum. Alternatively, you can [set up SSH keys](http://happygitwithr.com/ssh-keys.html#ssh-keys).
-- [Prove RStudio can find local Git](http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github) and, therefore, can talk to GitHub
+- [Introduce yourself to Git](http://happygitwithr.com/hello-git.html#hello-git){target="_blank"} using the name and email you used with your GitHub account
+- [Cache your username and password](http://happygitwithr.com/credential-caching.html#credential-caching){target="_blank"} or so you do not need to authenticate yourself to GitHub interactively ad nauseum. Alternatively, you can [set up SSH keys](http://happygitwithr.com/ssh-keys.html#ssh-keys){target="_blank"}.
+- [Prove RStudio can find local Git](http://happygitwithr.com/rstudio-git-github.html#rstudio-git-github){target="_blank"} and, therefore, can talk to GitHub
 
 Cleanup
 

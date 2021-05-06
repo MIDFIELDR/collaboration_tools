@@ -62,12 +62,10 @@ There are a number of approaches to reviewing and accepting pull
 requests. Please refer to a reference of your choosing to learn the
 procedure. I suggest:
 
--   [Reviewing a pull
-    request](https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html#reviewing)
+-   <a href="https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html#reviewing" target="_blank">Reviewing a pull request</a>
     by Michael Ernst
--   [Explore and extend a pull
-    request](https://happygitwithr.com/pr-extend.html) by Jenny Bryan
-    and Jim Hester
+-   <a href="https://happygitwithr.com/pr-extend.html" target="_blank">Explore and extend a pull request</a>
+    by Jenny Bryan and Jim Hester
 
 ## assistant’s initial tasks
 

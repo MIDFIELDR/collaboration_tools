@@ -1,20 +1,25 @@
 ---
 title: "prepared data"
+output: github_document
+link-citations: yes
 bibliography: "../resources/midfield-references.bib"
 csl: "../resources/national-science-foundation-grant-proposals.csl"
-link-citations: yes
-output: github_document
-resource_files:
-  - ../rd_images/p005-data/thumb-fig4-1.png
 editor_options: 
   chunk_output_type: console
+resource_files:
+  - ../resources/data-image-2.png
+  - ../figures/thumbnail-fig004-grad-rate.png
+  - ../figures/thumbnail-fig008-stickiness.png
+  - ../figures/thumb-2008-jee-fig-01.png
+  - ../figures/thumb-2008-jee-fig-02.png
+  - ../figures/thumb-2008-jee-fig-03.png
+  - ../figures/thumb-2008-jee-table-10.png
 ---
 
-```{r echo = FALSE, message = FALSE}
+```{r include = FALSE}
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
-opts_chunk$set(collapse = TRUE, comment = "#>")
-opts_chunk$set(warning = FALSE, message = FALSE, echo = FALSE, cache = FALSE) 
+opts_chunk$set(include = FALSE) 
 knit_hooks$set(inline = function(x) {
 	if (!is.numeric(x)) { 
 		x 
@@ -219,7 +224,7 @@ image_write(img,
 
 **Table 10**
 
-```{r}
+```{r include = FALSE}
 # reconstruct data from table in paper
 df <- build_frame(
   "letter_grade", "Arts_Hum", "Bus", "Comp_Sci", "Engr", "Other", "Other_STM", "Soc_Sci" | 

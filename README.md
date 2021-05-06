@@ -37,8 +37,8 @@ Collaborating
 
 Data
 
--   [Prepared data](pages/p005-data.md) for selected published figures
-    with links to CSV data files
+-   [Prepared data](pages/p005-prepared-data.md) for selected published
+    figures with links to CSV data files
 
 ## resources
 

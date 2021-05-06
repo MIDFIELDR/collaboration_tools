@@ -18,10 +18,9 @@ To download a data file:
 -   Right-click on the “Raw” icon &gt; *Save link as …* to download the
     file
 
-## 2019 JEE
+## 2019 JEE \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]
 
-Reference \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]. All images
-&#169; 2019 Journal of Engineering Education.
+All images &#169; 2019 Journal of Engineering Education.
 
 **Figure 4**
 
@@ -29,7 +28,7 @@ Reference \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]. All images
     race/ethnicity and sex
 -   data file [(link)](../data/2019-jee-figure-4-data.csv)
 
-![](../figures/thumbnail-fig004-grad-rate.png)
+![](../figures/thumb-2019-jee-fig-04.png)
 
 **Figure 8**
 
@@ -38,7 +37,7 @@ Reference \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]. All images
     who graduate in any other major
 -   data [(link)](../data/2019-jee-figure-8-data.csv)
 
-![](../figures/thumbnail-fig008-stickiness.png)
+![](../figures/thumb-2019-jee-fig-08.png)
 
 **Figure 10**
 
@@ -49,33 +48,74 @@ Reference \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]. All images
 -   data (link) placeholder
 -   image thumbnail
 
-## 2011 JEE
+## 2011 JEE \[[2](#ref-Ohland+Brawner+Camacho+others:2011)\].
 
-Reference \[[2](#ref-Ohland+Brawner+Camacho+others:2011)\]. All images
-&#169; 2011 Journal of Engineering Education.
+All images &#169; 2011 Journal of Engineering Education.
 
 **Figure 1**
 
--   caption placeholder
+-   The number of men (open circles) and women (filled circles) at a
+    particular institution who matriculate in engineering and persist to
+    the eighth semester (horizontal position) and the number of those
+    students who subsequently graduate in engineering within six years
+    (vertical position). The regression lines indicate the relationship
+    between the two numbers for men and women separately. The lack of
+    distinction between the regression lines indicates that there is no
+    aggregate gender difference.
 -   data (link) placeholder
--   image thumbnail
+
+![](../figures/thumb-2011-jee-fig-01.png)
 
 **Figure 2**
 
--   caption placeholder
+-   Eight-semester persistence, yield, and six-year graduation rate of
+    various populations. Each panel compares institutions by gender. All
+    races/ethnicities are aggregated in the main panel (Figure 2.1) and
+    disaggregated in the smaller panels (Figures 2.2 through 2.6).
 -   data (link) placeholder
--   -image thumbnail
+
+![](../figures/thumb-2011-jee-fig-02.png)
 
 **Figure 3**
 
--   caption placeholder
+-   Six-year graduation rates disaggregated by institution and gender.
+    Individual panels compare behaviors by race/ethnicity.
 -   data (link) placeholder
--   image thumbnail
 
-## 2008 JEE
+![](../figures/thumb-2011-jee-fig-03.png)
 
-Reference \[[3](#ref-Ohland+Sheppard+Lichtenstein+others:2008)\]. All
-images &#169; 2008 Journal of Engineering Education.
+## 2009 JWMSE \[[3](#ref-Lord+Camacho+Layton+others:2009)\].
+
+All images &#169; 2009 Journal of Women and Minorities in Science and
+Engineering
+
+**Figure 2**
+
+-   Comparison by gender of the eighth-semester destinations of
+    Engineering matriculants.
+-   data (link) placeholder
+
+![](../figures/thumb-2009-jwmse-fig-02.png)
+
+**Figure 4**
+
+-   Percentages of Engineering matriculants persisting to the
+    eighth-semester in Engineering.
+-   data (link) placeholder
+
+![](../figures/thumb-2009-jwmse-fig-04.png)
+
+**Figure 5**
+
+-   Comparison by gender (with all races aggregated) of the distribution
+    of fourth-semester GPAs in STEM courses
+-   data (link) placeholder
+
+![](../figures/thumb-2009-jwmse-fig-05.png)
+
+## 2008 JEE \[[4](#ref-Ohland+Sheppard+Lichtenstein+others:2008)\].
+
+All images &#169; 2008 Journal of Engineering Education.
 
 **Figure 1**
 
@@ -131,10 +171,20 @@ https://doi.org/<https://doi.org/10.1002/j.2168-9830.2011.tb00012.x>
 
 </div>
 
+<div id="ref-Lord+Camacho+Layton+others:2009" class="csl-entry">
+
+3\. Lord SM, Camacho MM, Layton RA, Ohland RALMW, Wasburn MH (2009)
+<span class="nocase">Who’s persisting in engineering? A comparative
+analysis of female and male Asian, Black, Hispanic, Native American, and
+White students</span>. *Journal of Women and Minorities in Science and
+Engineering*, 15:167–190.
+
+</div>
+
 <div id="ref-Ohland+Sheppard+Lichtenstein+others:2008"
 class="csl-entry">
 
-3\. Ohland MW, Sheppard SD, Lichtenstein G, Eris O, Chachra D, Layton RA
+4\. Ohland MW, Sheppard SD, Lichtenstein G, Eris O, Chachra D, Layton RA
 (2008) <span class="nocase">Persistence, engagement, and migration in
 engineering programs</span>. *Journal of Engineering Education*,
 97(3):259–278.

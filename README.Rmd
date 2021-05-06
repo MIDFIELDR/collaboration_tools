@@ -1,7 +1,7 @@
 ---
 output: github_document
 bibliography: "resources/references.bib"
-csl: "resources/journal-of-glaciology.csl"
+csl: "resources/national-science-foundation-grant-proposals.csl"
 link-citations: yes
 ---
 
@@ -71,6 +71,6 @@ df <- wrapr::build_frame(
     "2021-03-31", "Launch repo", "R. Layton" 
   
 )
-kable(df)
+knitr::kable(df)
 ```
 </small>

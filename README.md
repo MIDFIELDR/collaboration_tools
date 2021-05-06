@@ -24,8 +24,7 @@ R basics
     edition](https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf)
     A short tutorial overview of the key concepts of R relying on only
     two additional packages: data.table for data carpentry and ggplot2
-    for visualization ([Bashir and Eddelbuettel,
-    2018](#ref-Bashir+Eddelbuettel:2018)).
+    for visualization \[[1](#ref-Bashir+Eddelbuettel:2018)\].
 
 Collaborating
 
@@ -51,11 +50,11 @@ Data
 
 ## references
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body">
 
 <div id="ref-Bashir+Eddelbuettel:2018" class="csl-entry">
 
-Bashir S and Eddelbuettel D (2018) <span class="nocase">Getting started
+1\. Bashir S, Eddelbuettel D (2018) <span class="nocase">Getting started
 in R: Tinyverse edition</span>.
 <https://eddelbuettel.github.io/gsir-te/Getting-Started-in-R.pdf>
 

@@ -104,7 +104,7 @@ images &#169; 2008 Journal of Engineering Education.
 **Table 10**
 
 -   Cumulative frequency of transcript-recorded grades in MIFIELD data
--   data file [(link)](../2008-jee-table-10-data.csv)
+-   data file [(link)](../data/2008-jee-table-10-data.csv)
 
 ![](../figures/thumb-2008-jee-table-10.png)
 

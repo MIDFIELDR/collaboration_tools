@@ -68,9 +68,6 @@ Reference [@Lord+Ohland+Layton+Camacho:2019]. All images `r sym("copyright")` 20
 
 **Figure 4**
 
-- Graduation rates of starters in a discipline grouped by race/ethnicity and sex 
-- data file [(link)](../data/2019-jee-figure-4-data.csv) 
-
 ```{r}
 # adjust significant digits and edit columns
 df <- fread("data-raw/2019-jee-figure-4-data.csv")
@@ -91,6 +88,9 @@ image_write(img,
         path = "figures/thumbnail-fig004-grad-rate.png",
         format = "png")
 ```
+
+- Graduation rates of starters in a discipline grouped by race/ethnicity and sex 
+- data file [(link)](../data/2019-jee-figure-4-data.csv) 
 
 ![](../figures/thumbnail-fig004-grad-rate.png)
 
@@ -234,7 +234,7 @@ fwrite(df, file = "data/2008-jee-table-10-data.csv")
 ```
 
 - Cumulative frequency of transcript-recorded grades in MIFIELD data
-- data file [(link)](../2008-jee-table-10-data.csv) 
+- data file [(link)](../data/2008-jee-table-10-data.csv) 
 
 ```{r 2008-jee-table-10}
 # create thumbnails

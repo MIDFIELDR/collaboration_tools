@@ -45,6 +45,8 @@ img <- image_scale(img, "791x180!")
 image_write(img,
         path = "resources/data-image-2.png",
         format = "png")
+
+thumb_size <- "300x"
 ```
 
 ![](../resources/data-image-2.png)
@@ -65,9 +67,10 @@ To download a data file:
 
 
 
-## 2019 JEE [@Lord+Ohland+Layton+Camacho:2019]
+## 2019 JEE
 
-All images `r sym("copyright")` 2019 Journal of Engineering Education. 
+*Beyond pipeline and pathways: Ecosystem metrics*  [@Lord+Ohland+Layton+Camacho:2019]    
+<small>Images `r sym("copyright")` 2019 Journal of Engineering Education</small> 
 
 **Figure 4**
 
@@ -84,7 +87,7 @@ fwrite(df, file = "data/2019-jee-figure-4-data.csv")
 
 # create thumbnail
 img <- image_read("figures-raw/fig004-grad-rate.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2019-jee-fig-04.png",
         format = "png")
@@ -108,7 +111,7 @@ fwrite(df, file = "data/2019-jee-figure-8-data.csv")
 
 # create thumbnail
 img <- image_read("figures-raw/fig008-stickiness.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2019-jee-fig-08.png",
         format = "png")
@@ -126,12 +129,18 @@ image_write(img,
 # TBD
 
 # create thumbnail
-# TBD
+img <- image_read("figures-raw/2019-jee-fig-10.png")
+img <- image_scale(img, thumb_size)
+image_write(img,
+        path = "figures/thumb-2019-jee-fig-10.png",
+        format = "png")
 ```
 
 - Contour plot of migration yield as the product of the fraction of migrators attracted to a discipline (horizontal scale) and the fraction of those students graduating in the discipline (vertical scale).
 - data (link) placeholder
-- image thumbnail
+
+
+![](../figures/thumb-2019-jee-fig-10.png)
 
 
 
@@ -140,9 +149,10 @@ image_write(img,
 
 
 
-## 2011 JEE [@Ohland+Brawner+Camacho+others:2011]. 
+## 2011 JEE 
 
-All images `r sym("copyright")` 2011 Journal of Engineering Education. 
+*Race, gender, and measures of success in engineering education* [@Ohland+Brawner+Camacho+others:2011]    
+<small>Images `r sym("copyright")` 2011 Journal of Engineering Education</small> 
 
 **Figure 1**
 
@@ -152,13 +162,13 @@ All images `r sym("copyright")` 2011 Journal of Engineering Education.
 
 # create thumbnail
 img <- image_read("figures-raw/2011-jee-fig-01.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2011-jee-fig-01.png",
         format = "png")
 ```
 
-- The number of men (open circles) and women (filled circles) at a particular institution who matriculate in engineering and persist to the eighth semester (horizontal position) and the number of those students who subsequently graduate in engineering within six years (vertical position). The regression lines indicate the relationship between the two numbers for men and women separately. The lack of distinction between the regression lines indicates that there is no aggregate gender difference.
+- The number of men (open circles) and women (filled circles) at a particular institution who matriculate in engineering and persist to the eighth semester (horizontal position) and the number of those students who subsequently graduate in engineering within six years (vertical position). 
 - data (link) placeholder
 
 ![](../figures/thumb-2011-jee-fig-01.png)
@@ -171,7 +181,7 @@ image_write(img,
 
 # create thumbnail
 img <- image_read("figures-raw/2011-jee-fig-02.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2011-jee-fig-02.png",
         format = "png")
@@ -190,7 +200,7 @@ image_write(img,
 
 # create thumbnail
 img <- image_read("figures-raw/2011-jee-fig-03.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2011-jee-fig-03.png",
         format = "png")
@@ -208,9 +218,10 @@ image_write(img,
 
 
 
-## 2009 JWMSE [@Lord+Camacho+Layton+others:2009]. 
+## 2009 JWMSE 
 
-All images `r sym("copyright")` 2009 Journal of Women and Minorities in Science and Engineering
+*Who’s persisting in engineering? A comparative analysis of female and male Asian, Black, Hispanic, Native American, and White students* [@Lord+Camacho+Layton+others:2009]    
+<small>Images `r sym("copyright")` 2009 Journal of Women and Minorities in Science and Engineering</small>
 
 **Figure 2**
 
@@ -220,7 +231,7 @@ All images `r sym("copyright")` 2009 Journal of Women and Minorities in Science 
 
 # create thumbnail
 img <- image_read("figures-raw/2009-jwmse-fig-02.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2009-jwmse-fig-02.png",
         format = "png")
@@ -239,7 +250,7 @@ image_write(img,
 
 # create thumbnail
 img <- image_read("figures-raw/2009-jwmse-fig-04.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2009-jwmse-fig-04.png",
         format = "png")
@@ -258,7 +269,7 @@ image_write(img,
 
 # create thumbnail
 img <- image_read("figures-raw/2009-jwmse-fig-05.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2009-jwmse-fig-05.png",
         format = "png")
@@ -274,9 +285,10 @@ image_write(img,
 
 
 
-## 2008 JEE [@Ohland+Sheppard+Lichtenstein+others:2008]. 
+## 2008 JEE 
 
-All images `r sym("copyright")` 2008 Journal of Engineering Education. 
+*Persistence, engagement, and migration in engineering programs* [@Ohland+Sheppard+Lichtenstein+others:2008]    
+<small>Images `r sym("copyright")` 2008 Journal of Engineering Education</small> 
 
 **Figure 1**
 
@@ -286,7 +298,7 @@ All images `r sym("copyright")` 2008 Journal of Engineering Education.
 
 # create thumbnail
 img <- image_read("figures-raw/2008-jee-fig-01.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2008-jee-fig-01.png",
         format = "png")
@@ -305,7 +317,7 @@ image_write(img,
 
 # create thumbnail
 img <- image_read("figures-raw/2008-jee-fig-02.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2008-jee-fig-02.png",
         format = "png")
@@ -324,7 +336,7 @@ image_write(img,
 
 # create thumbnail
 img <- image_read("figures-raw/2008-jee-fig-03.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2008-jee-fig-03.png",
         format = "png")
@@ -362,7 +374,7 @@ fwrite(df, file = "data/2008-jee-table-10-data.csv")
 
 # create thumbnail
 img <- image_read("figures-raw/2008-jee-table-10.png")
-img <- image_scale(img, "300x")
+img <- image_scale(img, thumb_size)
 image_write(img,
         path = "figures/thumb-2008-jee-table-10.png",
         format = "png")

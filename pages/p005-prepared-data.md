@@ -18,9 +18,11 @@ To download a data file:
 -   Right-click on the “Raw” icon &gt; *Save link as …* to download the
     file
 
-## 2019 JEE \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]
+## 2019 JEE
 
-All images &#169; 2019 Journal of Engineering Education.
+*Beyond pipeline and pathways: Ecosystem metrics*
+\[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]  
+<small>Images &#169; 2019 Journal of Engineering Education</small>
 
 **Figure 4**
 
@@ -46,11 +48,14 @@ All images &#169; 2019 Journal of Engineering Education.
     fraction of those students graduating in the discipline (vertical
     scale).
 -   data (link) placeholder
--   image thumbnail
 
-## 2011 JEE \[[2](#ref-Ohland+Brawner+Camacho+others:2011)\].
+![](../figures/thumb-2019-jee-fig-10.png)
 
-All images &#169; 2011 Journal of Engineering Education.
+## 2011 JEE
+
+*Race, gender, and measures of success in engineering education*
+\[[2](#ref-Ohland+Brawner+Camacho+others:2011)\]  
+<small>Images &#169; 2011 Journal of Engineering Education</small>
 
 **Figure 1**
 
@@ -58,10 +63,7 @@ All images &#169; 2011 Journal of Engineering Education.
     particular institution who matriculate in engineering and persist to
     the eighth semester (horizontal position) and the number of those
     students who subsequently graduate in engineering within six years
-    (vertical position). The regression lines indicate the relationship
-    between the two numbers for men and women separately. The lack of
-    distinction between the regression lines indicates that there is no
-    aggregate gender difference.
+    (vertical position).
 -   data (link) placeholder
 
 ![](../figures/thumb-2011-jee-fig-01.png)
@@ -84,10 +86,13 @@ All images &#169; 2011 Journal of Engineering Education.
 
 ![](../figures/thumb-2011-jee-fig-03.png)
 
-## 2009 JWMSE \[[3](#ref-Lord+Camacho+Layton+others:2009)\].
+## 2009 JWMSE
 
-All images &#169; 2009 Journal of Women and Minorities in Science and
-Engineering
+*Who’s persisting in engineering? A comparative analysis of female and
+male Asian, Black, Hispanic, Native American, and White students*
+\[[3](#ref-Lord+Camacho+Layton+others:2009)\]  
+<small>Images &#169; 2009 Journal of Women and Minorities in Science and
+Engineering</small>
 
 **Figure 2**
 
@@ -113,9 +118,11 @@ Engineering
 
 ![](../figures/thumb-2009-jwmse-fig-05.png)
 
-## 2008 JEE \[[4](#ref-Ohland+Sheppard+Lichtenstein+others:2008)\].
+## 2008 JEE
 
-All images &#169; 2008 Journal of Engineering Education.
+*Persistence, engagement, and migration in engineering programs*
+\[[4](#ref-Ohland+Sheppard+Lichtenstein+others:2008)\]  
+<small>Images &#169; 2008 Journal of Engineering Education</small>
 
 **Figure 1**
 

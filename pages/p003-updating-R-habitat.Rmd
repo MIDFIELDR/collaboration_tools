@@ -1,7 +1,9 @@
 ---
 title: "updating the R habitat"
 output: github_document
-bibliography: "../resources/references.bib"
+bibliography: 
+  - "../resources/references.bib"
+  - "../resources/midfield-references.bib"
 csl: "../resources/national-science-foundation-grant-proposals.csl"
 editor_options: 
   chunk_output_type: console

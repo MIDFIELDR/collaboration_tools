@@ -1,12 +1,14 @@
 ---
 title: "installing software"
 output: github_document
-bibliography: "../resources/references.bib"
+bibliography: 
+  - "../resources/references.bib"
+  - "../resources/midfield-references.bib"
 csl: "../resources/national-science-foundation-grant-proposals.csl"
 editor_options: 
   chunk_output_type: console
 resource_files:
-  - ../resources/header-install-software.png
+  - ../resources/p001-header.png
 ---
 
 ```{r setup, include = FALSE}
@@ -25,7 +27,7 @@ knit_hooks$set(inline = function(x) {
 ```
 
 
-![](../resources/header-install-software.png)
+![](../resources/p001-header.png)
 
 Before you can collaborate using GitHub, both you and your collaborator have to install software and setup accounts as follows. 
 

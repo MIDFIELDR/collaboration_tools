@@ -1,6 +1,8 @@
 ---
 output: github_document
-bibliography: "resources/references.bib"
+bibliography: 
+  - "resources/references.bib"
+  - "resources/midfield-references.bib"
 csl: "resources/national-science-foundation-grant-proposals.csl"
 link-citations: yes
 ---

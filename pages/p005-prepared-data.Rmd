@@ -2,7 +2,9 @@
 title: "prepared data"
 output: github_document
 link-citations: yes
-bibliography: "../resources/midfield-references.bib"
+bibliography: 
+  - "../resources/references.bib"
+  - "../resources/midfield-references.bib"
 csl: "../resources/national-science-foundation-grant-proposals.csl"
 editor_options: 
   chunk_output_type: console

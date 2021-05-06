@@ -2,12 +2,12 @@
 title: "using version control to share work"
 output: github_document
 bibliography: "../resources/references.bib"
-csl: "../resources/journal-of-glaciology.csl"
+csl: "../resources/national-science-foundation-grant-proposals.csl"
 link-citations: yes
 editor_options: 
   chunk_output_type: console
 resource_files:
-  - ../resources/network.jpg
+  - ../resources/p002-header.jpg
   - ../resources/git-collab-001.png
   - ../resources/git-collab-002.png
   - ../resources/git-collab-003.png
@@ -19,11 +19,10 @@ resource_files:
   - ../resources/git-collab-009.png
 ---
 
-```{r echo = FALSE, message = FALSE}
+```{r setup, include = FALSE}
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
-opts_chunk$set(collapse = TRUE, comment = "#>")
-opts_chunk$set(warning = TRUE, message = TRUE) 
+opts_chunk$set(include = FALSE) 
 knit_hooks$set(inline = function(x) {
 	if (!is.numeric(x)) { 
 		x 
@@ -35,7 +34,7 @@ knit_hooks$set(inline = function(x) {
 	})
 ```
 
-![](../resources/network.jpg)
+![](../resources/p002-header.jpg)
 <small>
 <br>
 <i>Network</i> by gritphilm is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC BY-NC-ND 2.0</a>

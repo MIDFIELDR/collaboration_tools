@@ -1,7 +1,7 @@
 prepared data
 ================
 
-![](../resources/data-image-2.png) <small> <br> <i>Warm data</i> by
+![](../resources/p005-header.png) <small> <br> <i>Warm data</i> by
 beachmobjellies is licensed under
 <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC
 BY-SA 2.0</a> <br> </small>

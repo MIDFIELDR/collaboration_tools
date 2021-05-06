@@ -53,7 +53,7 @@ Once you have a GitHub account, do the following steps to make the
 connection between RStudio and GitHub fast and easy. Please read through
 an entire step before starting that step.
 
--   Some instructions ask you to type commands in the “shell”. To access
+-   Some instructions ask you to type commands in the “shell.” To access
     the shell, open RStudio and use the pulldown menu *Tools &gt;
     Shell*.
 -   <a href="http://happygitwithr.com/hello-git.html#hello-git" target="_blank">Introduce yourself to Git</a>

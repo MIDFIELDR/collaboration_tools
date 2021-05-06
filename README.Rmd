@@ -5,9 +5,19 @@ csl: "resources/national-science-foundation-grant-proposals.csl"
 link-citations: yes
 ---
 
-```{r setup, include=FALSE}
-library("knitr")
-opts_chunk$set(echo = FALSE)
+```{r setup, include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+opts_chunk$set(include = FALSE) 
+knit_hooks$set(inline = function(x) {
+	if (!is.numeric(x)) { 
+		x 
+		} else if (x >= 10000) { 
+		prettyNum(round(x, 2), big.mark = ",")
+		} else {
+		prettyNum(round(x, 2))
+		}
+	})
 ```
 
 # midfieldr handbook <span class="border-wrap"><img src="resources/midfieldcut-1368x328.jpg" align="right" height="55" width="229" alt="logo.png"></span>
@@ -63,7 +73,7 @@ Data
 
 ## revisions
 <small>
-```{r}
+```{r include = TRUE, echo = FALSE}
 df <- wrapr::build_frame(
   "Date", "Item", "By" |
     "2021-05-04", "Add prepared data page", "R. Layton" |

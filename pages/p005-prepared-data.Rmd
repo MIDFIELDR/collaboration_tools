@@ -7,7 +7,7 @@ csl: "../resources/national-science-foundation-grant-proposals.csl"
 editor_options: 
   chunk_output_type: console
 resource_files:
-  - ../resources/data-image-2.png
+  - ../resources/p005-header.png
   - ../figures/thumbnail-fig004-grad-rate.png
   - ../figures/thumbnail-fig008-stickiness.png
   - ../figures/thumb-2008-jee-fig-01.png
@@ -40,16 +40,16 @@ library("wrapr")
 library("data.table")
 
 # page header image
-img <- image_read("resources/data-image-2.jpg")
+img <- image_read("resources/p005-header.jpg")
 img <- image_scale(img, "791x180!")
 image_write(img,
-        path = "resources/data-image-2.png",
+        path = "resources/p005-header.png",
         format = "png")
 
 thumb_size <- "300x"
 ```
 
-![](../resources/data-image-2.png)
+![](../resources/p005-header.png)
 <small>
 <br>
 <i>Warm data</i> by beachmobjellies is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>

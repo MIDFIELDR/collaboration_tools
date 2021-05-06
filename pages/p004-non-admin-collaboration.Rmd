@@ -2,12 +2,12 @@
 title: "sharing work with assistants"
 output: github_document
 bibliography: "../resources/references.bib"
-csl: "../resources/journal-of-glaciology.csl"
+csl: "../resources/national-science-foundation-grant-proposals.csl"
 link-citations: yes
 editor_options: 
   chunk_output_type: console
 resource_files:
-  - ../resources/near-future.jpg
+  - ../resources/p004-header.jpg
   - ../resources/git-collab-001.png
   - ../resources/git-collab-002.png
   - ../resources/git-collab-004.png
@@ -24,11 +24,10 @@ resource_files:
   - ../resources/git-collab-017.png 
 ---
 
-```{r echo = FALSE, message = FALSE}
+```{r setup, include = FALSE}
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
-opts_chunk$set(collapse = TRUE, comment = "#>")
-opts_chunk$set(warning = TRUE, message = TRUE) 
+opts_chunk$set(include = FALSE) 
 knit_hooks$set(inline = function(x) {
 	if (!is.numeric(x)) { 
 		x 
@@ -40,7 +39,7 @@ knit_hooks$set(inline = function(x) {
 	})
 ```
 
-![](../resources/near-future.jpg)
+![](../resources/p004-header.jpg)
 <small>
 <br>
 <i>Near future</i> by Anja Mexicola is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC BY-NC 2.0</a>

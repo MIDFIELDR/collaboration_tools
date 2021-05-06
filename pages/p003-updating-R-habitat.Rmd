@@ -1,18 +1,19 @@
 ---
 title: "updating the R habitat"
 output: github_document
+bibliography: "../resources/references.bib"
+csl: "../resources/national-science-foundation-grant-proposals.csl"
 editor_options: 
   chunk_output_type: console
 resource_files:
-  - ../resources/habitat.jpg
+  - ../resources/p003-header.jpg
   - ../resources/cm904-01.png
 ---
 
-```{r echo = FALSE, message = FALSE}
+```{r setup, include = FALSE}
 library(knitr)
 opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
-opts_chunk$set(collapse = TRUE, comment = "#>")
-opts_chunk$set(warning = TRUE, message = TRUE) 
+opts_chunk$set(include = FALSE) 
 knit_hooks$set(inline = function(x) {
 	if (!is.numeric(x)) { 
 		x 
@@ -24,7 +25,7 @@ knit_hooks$set(inline = function(x) {
 	})
 ```
 
-![](../resources/habitat.jpg)
+![](../resources/p003-header.jpg)
 <small>
 <br>
 <i>Habitat</i> by Kylie Jaxxon is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">CC BY-SA 2.0</a>

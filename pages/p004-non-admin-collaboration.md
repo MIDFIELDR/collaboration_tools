@@ -1,7 +1,7 @@
 sharing work with assistants
 ================
 
-![](../resources/near-future.jpg) <small> <br> <i>Near future</i> by
+![](../resources/p004-header.jpg) <small> <br> <i>Near future</i> by
 Anja Mexicola is licensed under
 <a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC
 BY-NC 2.0</a> <br> </small>
@@ -17,8 +17,8 @@ pull request that requires review by the author (or other project
 administrator) before acceptance.
 
 If you want to learn more about using git and GitHub, see “Happy Git and
-GitHub for the useR” ([Bryan and Hester, 2021](#ref-Bryan+Hester:2021))
-from which I adapted most of this tutorial.
+GitHub for the useR” \[[1](#ref-Bryan+Hester:2021)\] from which I
+adapted most of this tutorial.
 
 ## contents
 
@@ -224,11 +224,11 @@ the source repo.
 
 ## references
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body">
 
 <div id="ref-Bryan+Hester:2021" class="csl-entry">
 
-Bryan J and Hester J (2021) <span class="nocase">Happy Git and GitHub
+1\. Bryan J, Hester J (2021) <span class="nocase">Happy Git and GitHub
 for the useR</span>. <https://happygitwithr.com/>
 
 </div>

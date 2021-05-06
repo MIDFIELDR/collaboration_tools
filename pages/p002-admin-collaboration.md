@@ -1,8 +1,8 @@
 using version control to share work
 ================
 
-![](../resources/network.jpg) <small> <br> <i>Network</i> by gritphilm
-is licensed under
+![](../resources/p002-header.jpg) <small> <br> <i>Network</i> by
+gritphilm is licensed under
 <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode">CC
 BY-NC-ND 2.0</a> <br> </small>
 
@@ -16,8 +16,8 @@ In this approach, author and co-authors all have permission to make
 changes without prior approval by another author.
 
 If you want to learn more about using git and GitHub, see “Happy Git and
-GitHub for the useR” ([Bryan and Hester, 2021](#ref-Bryan+Hester:2021))
-from which I adapted most of this tutorial.
+GitHub for the useR” \[[1](#ref-Bryan+Hester:2021)\] from which I
+adapted most of this tutorial.
 
 ## contents
 
@@ -129,11 +129,11 @@ recent edits.
 
 ## references
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body">
 
 <div id="ref-Bryan+Hester:2021" class="csl-entry">
 
-Bryan J and Hester J (2021) <span class="nocase">Happy Git and GitHub
+1\. Bryan J, Hester J (2021) <span class="nocase">Happy Git and GitHub
 for the useR</span>. <https://happygitwithr.com/>
 
 </div>

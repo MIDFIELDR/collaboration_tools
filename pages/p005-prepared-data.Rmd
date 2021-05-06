@@ -230,6 +230,16 @@ df <- build_frame(
     "F",  6,  6,  7,  5,  6,  6,  6 |
     "W",  4,  4,  5,  4,  4,  4,  4 
 )
+
+df <- data.table(df)
+df <- melt(df, 
+           id = "letter_grade", 
+           measure = c("Arts_Hum", "Bus", "Comp_Sci", "Engr", "Other", "Other_STM", "Soc_Sci"), 
+           variable.name = "group_of_majors", 
+           value.name = "percent_of_major")
+df <- df[, .(group_of_majors, letter_grade, percent_of_major)]
+df
+
 fwrite(df, file = "data/2008-jee-table-10-data.csv")
 ```
 

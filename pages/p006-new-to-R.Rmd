@@ -42,7 +42,7 @@ Researchers interested in exploring MIDFIELD data are often R novices,  learning
 
 If you are working in RStudio, you can see the menu of keyboard shortcuts using the menu  *Tools > Keyboard Shortcuts Help*. The shortcuts we use regularly include 
 
-```{r echo = FALSE}
+```{r echo = FALSE, include = TRUE}
 library("data.table")
 df <- wrapr::build_frame(
   "Windows / Linux", "Action", "Mac OS"|

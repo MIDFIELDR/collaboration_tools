@@ -21,6 +21,22 @@ If you are working in RStudio, you can see the menu of keyboard
 shortcuts using the menu *Tools &gt; Keyboard Shortcuts Help*. The
 shortcuts we use regularly include
 
+| Windows / Linux | Action                              | Mac OS         |
+|:----------------|:------------------------------------|:---------------|
+| `ctrl shift K`  | Compile R Markdown document         | `cmd shift K`  |
+| `ctrl L`        | Clear the RSDtudio Console          | `ctrl L`       |
+| `ctrl shift C`  | Comment/uncomment line(s)           | `cmd shift C`  |
+| `ctrl X, C, V`  | Cut, copy, paste                    | `cmd X, C, V`  |
+| `ctrl F`        | Find in text                        | `cmd F`        |
+| `ctrl I`        | Indent or re-indent lines           | `cmd I`        |
+| `alt` –         | Insert the assignment operator `<-` | `option` –     |
+| `ctrl alt B`    | Run from begining to line           | `cmd option B` |
+| `ctrl alt E`    | Run from line to end                | `cmd option E` |
+| `ctrl Enter`    | Run selected line(s)                | `cmd Return`   |
+| `ctrl S`        | Save                                | `cmd S`        |
+| `ctrl A`        | Select all text                     | `cmd A`        |
+| `ctrl Z`        | Undo                                | `cmd Z`        |
+
 ## Work in an RStudio Project
 
 The first (highly opinionated) rule for MIDFIELD researchers

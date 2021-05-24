@@ -57,25 +57,25 @@ Researchers interested in exploring MIDFIELD data are often R novices,  learning
 
 ## Keyboard shortcuts
 
-If you are working in RStudio, you can see the menu of keyboard shortcuts using the menu  *Tools > Keyboard Shortcuts Help*. The (Windows) shortcuts we use regularly include 
+If you are working in RStudio, you can see the menu of keyboard shortcuts using the menu  *Tools > Keyboard Shortcuts Help*. The shortcuts we use regularly include 
 
 ```{r echo = FALSE}
 library("data.table")
 df <- wrapr::build_frame(
-  "Keyboard shortcut", "Action" |
-    "`ctrl L`"       , "Clear the RSDtudio Console" |
-    "`ctrl Enter`"   , "Run selected line(s)" |
-    "`ctrl alt B`"   , "Run from  begining to line" |
-    "`ctrl alt E`"   , "Run from line to end" |
-    "`alt` --"       , "Insert `<-`, the assign operator" |
-    "`ctrl shift C`" , "Comment/uncomment line(s)" |
-    "`ctrl X, C, V`" , "Cut, copy, paste" |
-    "`ctrl Z`"       , "Undo" |
-    "`ctrl F`"       , "Find in text" |
-    "`ctrl I`"       , "Indent/re-indent lines"  |
-    "`ctrl S`"       , "Save" |
-    "`ctrl A`"       , "Select all text" |
-    "`ctrl shift K`" , " Compile knitr or R Markdown document"
+  "Windows / Linux", "Action", "Mac OS"|
+    "`ctrl L`"       , "Clear the RSDtudio Console"  , "`ctrl L`" |
+    "`ctrl Enter`"   , "Run selected line(s)"        , "`cmd Return`" |
+    "`ctrl alt B`"   , "Run from  begining to line"  , "`cmd option B`" |
+    "`ctrl alt E`"   , "Run from line to end"        , "`cmd option E`" |
+    "`alt` --"       , "Insert the assignment operator `<-`", "`option` --" |
+    "`ctrl shift C`" , "Comment/uncomment line(s)"   , "`cmd shift C`" |
+    "`ctrl X, C, V`" , "Cut, copy, paste"            , "`cmd X, C, V`" |
+    "`ctrl Z`"       , "Undo"                        , "`cmd Z`" |
+    "`ctrl F`"       , "Find in text"                , "`cmd F`" |
+    "`ctrl I`"       , "Indent or re-indent lines"   , "`cmd I`" |
+    "`ctrl S`"       , "Save"                        , "`cmd S`" |
+    "`ctrl A`"       , "Select all text"             , "`cmd A`"  |
+    "`ctrl shift K`" , " Compile R Markdown document", "`cmd shift K`"
 )
 setDT(df)
 setkey(df, Action)
@@ -84,9 +84,15 @@ knitr::kable(df)
 
 ## Work in an RStudio Project 
 
-The first rule of working in an RStudio project, 
+The first (highly opinionated) rule for MIDFIELD researchers
 
-> Start your session by launching the `project-name.Rproj` file in the project's main directory. 
+> Always work in an RStudio Project
+
+- A project can be any unit of work: a course, a workshop, a paper, a grant, practice R, etc. 
+- Start every work session in an RStudio project. 
+- If your last session was in an RStudio Project, launching RStudio will re-open that project 
+- Alternatively, launch a project by navigating to the project directory and running the file with the `.Rproj` suffix. 
+
 
 RStudio is an an integrated development environment (IDE) for R that includes a console, editor, and tools for plotting, history, debugging, and workspace management as well as access to GitHub for collaboration and version control [@Rstudio:2021]. If we provide IDE screenshots, they will be from the RStudio interface. As the folks at RStudio assert, 
 
@@ -114,50 +120,13 @@ These lines can be typed in the RStudio console rather than an R script, because
 ## Stay current
 
 Running old software can be considerably harder than running new
-software. Get current at the start of a new project, but avoid updating if you are approaching a project deadline. Read more about it at [Maintaining R](https://whattheyforgot.org/maintaining-r.html), a chapter in Bryan and Hester [-@Bryan+Hester:2019]. 
+software. Get current at the start of a new project, but avoid updating if you are approaching a project deadline. 
+
+Navigate to [Updating the R habitat](p003-updating-R-habitat.md) for guidance in keeping R, RStudio, and R packages up-to-date. 
 
 
-**Update R.** On a Windows machine, update R using the R GUI running as an administrator.
 
-  - Navigate to your most recent `Rgui.exe` file located in your
-    Programs directory, e.g., `C:\Program
-    Files\R\R-3.5.3\bin\x64\Rgui.exe`  
-  - Right-click on `Rgui.exe` and run as administrator
 
-A straightforward update procedure uses the pacman package and the following lines of code. The first line ensures that pacman is installed. Run these lines in the R GUI. Defaults are generally OK. 
-    
-```r
-# ensure pacman is installed
-if (!require("pacman")) install.packages("pacman")
-
-# load installr
-pacman::p_load("installr")
-
-# update R 
-installr::updateR()
-```
-
-**Update RStudio.** Check for updates from the menu *Help \> Check for Updates*. If *Check for Updates* does not appear in the menu,
-
-  - Find the current version of RStudio from the menu *Help \> About
-    RStudio*  
-  - Navigate to the [RStudio
-    website](https://www.rstudio.com/products/rstudio/#Desktop), find
-    out what the current version is.
-
-To update RStudio, close RStudio on your machine, download
-the new version, and run the `RStudio-n.n.n.exe` as an administrator
-(`n.n.n` is the current version number).
-
-**Update R packages.** When updating packages, if a window pops up asking about compilation,
-
-- NO saves time
-- YES gets you the latest version but can be time-consuming. Don’t say yes if you are in a hurry to get some work done.
-
-To update packages in RStudio,
-
-- From the RStudio pane, Select *Packages \> Update*
-- OR, from the menu, *Tools \> Check for Package updates …*
 
 
 

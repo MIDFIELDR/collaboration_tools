@@ -14,30 +14,37 @@ have encountered in the past.
 
 If you are working in RStudio, you can see the menu of keyboard
 shortcuts using the menu *Tools &gt; Keyboard Shortcuts Help*. The
-(Windows) shortcuts we use regularly include
+shortcuts we use regularly include
 
-| Keyboard shortcut | Action                               |
-|:------------------|:-------------------------------------|
-| `ctrl shift K`    | Compile knitr or R Markdown document |
-| `ctrl L`          | Clear the RSDtudio Console           |
-| `ctrl shift C`    | Comment/uncomment line(s)            |
-| `ctrl X, C, V`    | Cut, copy, paste                     |
-| `ctrl F`          | Find in text                         |
-| `ctrl I`          | Indent/re-indent lines               |
-| `alt` –           | Insert `<-`, the assign operator     |
-| `ctrl alt B`      | Run from begining to line            |
-| `ctrl alt E`      | Run from line to end                 |
-| `ctrl Enter`      | Run selected line(s)                 |
-| `ctrl S`          | Save                                 |
-| `ctrl A`          | Select all text                      |
-| `ctrl Z`          | Undo                                 |
+| Windows / Linux | Action                              | Mac OS         |
+|:----------------|:------------------------------------|:---------------|
+| `ctrl shift K`  | Compile R Markdown document         | `cmd shift K`  |
+| `ctrl L`        | Clear the RSDtudio Console          | `ctrl L`       |
+| `ctrl shift C`  | Comment/uncomment line(s)           | `cmd shift C`  |
+| `ctrl X, C, V`  | Cut, copy, paste                    | `cmd X, C, V`  |
+| `ctrl F`        | Find in text                        | `cmd F`        |
+| `ctrl I`        | Indent or re-indent lines           | `cmd I`        |
+| `alt` –         | Insert the assignment operator `<-` | `option` –     |
+| `ctrl alt B`    | Run from begining to line           | `cmd option B` |
+| `ctrl alt E`    | Run from line to end                | `cmd option E` |
+| `ctrl Enter`    | Run selected line(s)                | `cmd Return`   |
+| `ctrl S`        | Save                                | `cmd S`        |
+| `ctrl A`        | Select all text                     | `cmd A`        |
+| `ctrl Z`        | Undo                                | `cmd Z`        |
 
 ## Work in an RStudio Project
 
-The first rule of working in an RStudio project,
+The first (highly opinionated) rule for MIDFIELD researchers
 
-> Start your session by launching the `project-name.Rproj` file in the
-> project’s main directory.
+> Always work in an RStudio Project
+
+-   A project can be any unit of work: a course, a workshop, a paper, a
+    grant, practice R, etc.
+-   Start every work session in an RStudio project.
+-   If your last session was in an RStudio Project, launching RStudio
+    will re-open that project
+-   Alternatively, launch a project by navigating to the project
+    directory and running the file with the `.Rproj` suffix.
 
 RStudio is an an integrated development environment (IDE) for R that
 includes a console, editor, and tools for plotting, history, debugging,
@@ -80,57 +87,10 @@ run the script.
 
 Running old software can be considerably harder than running new
 software. Get current at the start of a new project, but avoid updating
-if you are approaching a project deadline. Read more about it at
-[Maintaining R](https://whattheyforgot.org/maintaining-r.html), a
-chapter in Bryan and Hester \[[2](#ref-Bryan+Hester:2019)\].
+if you are approaching a project deadline.
 
-**Update R.** On a Windows machine, update R using the R GUI running as
-an administrator.
-
--   Navigate to your most recent `Rgui.exe` file located in your
-    Programs directory, e.g.,
-    `C:\Program     Files\R\R-3.5.3\bin\x64\Rgui.exe`  
--   Right-click on `Rgui.exe` and run as administrator
-
-A straightforward update procedure uses the pacman package and the
-following lines of code. The first line ensures that pacman is
-installed. Run these lines in the R GUI. Defaults are generally OK.
-
-``` r
-# ensure pacman is installed
-if (!require("pacman")) install.packages("pacman")
-
-# load installr
-pacman::p_load("installr")
-
-# update R 
-installr::updateR()
-```
-
-**Update RStudio.** Check for updates from the menu *Help &gt; Check for
-Updates*. If *Check for Updates* does not appear in the menu,
-
--   Find the current version of RStudio from the menu *Help &gt; About
-    RStudio*  
--   Navigate to the [RStudio
-    website](https://www.rstudio.com/products/rstudio/#Desktop), find
-    out what the current version is.
-
-To update RStudio, close RStudio on your machine, download the new
-version, and run the `RStudio-n.n.n.exe` as an administrator (`n.n.n` is
-the current version number).
-
-**Update R packages.** When updating packages, if a window pops up
-asking about compilation,
-
--   NO saves time
--   YES gets you the latest version but can be time-consuming. Don’t say
-    yes if you are in a hurry to get some work done.
-
-To update packages in RStudio,
-
--   From the RStudio pane, Select *Packages &gt; Update*
--   OR, from the menu, *Tools &gt; Check for Package updates …*
+Navigate to [Updating the R habitat](p003-updating-R-habitat.md) for
+guidance in keeping R, RStudio, and R packages up-to-date.
 
 ## Use relative paths
 
@@ -265,13 +225,6 @@ For different opinions on directory structure schemes, see
 
 1\. RStudio Team (2021) RStudio: Integrated development environment for
 r. <http://www.rstudio.com/>
-
-</div>
-
-<div id="ref-Bryan+Hester:2019" class="csl-entry">
-
-2\. Bryan J, Hester J (2019) <span class="nocase">What They Forgot to
-Teach You About R</span>. <https://whattheyforgot.org/>
 
 </div>
 

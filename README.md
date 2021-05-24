@@ -24,6 +24,7 @@ R basics
     A short tutorial overview of the key concepts of R relying on only
     two additional packages: data.table for data carpentry and ggplot2
     for visualization \[[1](#ref-Bashir+Eddelbuettel:2018)\].
+-   [New to R?](pages/p006-new-to-R.md) Tips for the new R user.
 
 Collaborating
 

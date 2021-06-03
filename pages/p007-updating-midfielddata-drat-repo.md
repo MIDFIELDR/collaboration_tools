@@ -13,20 +13,26 @@ repository instead of deploying it to CRAN because the package exceeds
 the CRAN size limits.
 
 These guidelines are a quick overview of how to go about updating the
-midfielddata package when needed. You can read more about it at Dirk
-Eddelbuettel’s [Drat basics for package
+midfielddata package when needed. This shouldn’t happer very often
+because the practice data are static.
+
+You can read more about drat at Dirk Eddelbuettel’s [Drat basics for
+package
 authors](https://eddelbuettel.github.io/drat/vignettes/dratforauthors/)
 
-First time only,
+## Update the drat repo
+
+First time only:
 
 -   Clone a local copy of the MIDFIELDR drat repo.
 -   Install the drat package.
 
-## Update the drat repo
+Once the work in the midfielddata package is complete, run R CMD build
+to produce the `midfielddata_x.x.x.tar.gz` file, where `x.x.x` is the
+version number.
 
--   Once the work in the midfielddata package is complete, run R CMD
-    build to produce the `midfielddata_x.x.x.tar.gz` file, where `x.x.x`
-    is the version number.
+Update the drat repo:
+
 -   Note the path to the local drat repo, e.g., `C:/path/to/local/drat`.
 -   In R change your working directory to the file location of the
     `.tar.gz` file and run:

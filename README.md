@@ -39,6 +39,12 @@ Data
 -   [Prepared data](pages/p005-prepared-data.md) for selected published
     figures with links to CSV data files
 
+Maintaining MIDFIELD packages
+
+-   [Deploying
+    midfielddata](pages/p007-updating-midfielddata-drat-repo.md) to its
+    drat repository
+
 ## resources
 
 -   <a href="https://engineering.purdue.edu/MIDFIELD" target="_blank">MIDFIELD</a>
@@ -67,10 +73,11 @@ in R: Tinyverse edition</span>.
 
 <small>
 
-| Date       | Item                   | By        |
-|:-----------|:-----------------------|:----------|
-| 2021-05-04 | Add prepared data page | R. Layton |
-| 2021-04-02 | Add Tinyverse link     | R. Layton |
-| 2021-03-31 | Launch repo            | R. Layton |
+| Date       | Item                            | By        |
+|:-----------|:--------------------------------|:----------|
+| 2021-06-03 | Add deploying midfielddata page | R. Layton |
+| 2021-05-04 | Add prepared data page          | R. Layton |
+| 2021-04-02 | Add Tinyverse link              | R. Layton |
+| 2021-03-31 | Launch repo                     | R. Layton |
 
 </small>

@@ -1,0 +1,81 @@
+---
+title: "Deploying midfielddata"
+output: github_document
+link-citations: yes
+bibliography: 
+  - "../resources/references.bib"
+  - "../resources/midfield-references.bib"
+csl: "../resources/national-science-foundation-grant-proposals.csl"
+editor_options: 
+  chunk_output_type: console
+resource_files:
+  - ../resources/p007-header.jpg
+nocite: | 
+  @drat:2021
+---
+
+```{r setup, include = FALSE}
+library(knitr)
+opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+opts_chunk$set(include = FALSE) 
+knit_hooks$set(inline = function(x) {
+	if (!is.numeric(x)) { 
+		x 
+		} else if (x >= 10000) { 
+		prettyNum(round(x, 2), big.mark = ",")
+		} else {
+		prettyNum(round(x, 2))
+		}
+	})
+```
+
+![](../resources/p007-header.jpg)
+<small>
+<br>
+<i>Drat</i> by cranky messiah is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.0/legalcode">CC BY-NC 2.0</a>
+<br>
+</small>
+
+## Introduction
+
+We use the drat package to deploy the midfielddata package as a GitHub repository instead of deploying it to CRAN because the package exceeds the CRAN size limits. 
+
+These guidelines are a quick overview of how to go about updating the midfielddata package when needed. You can read more about it at Dirk Eddelbuettel's [Drat basics for package authors](https://eddelbuettel.github.io/drat/vignettes/dratforauthors/)
+
+First time only, 
+
+- Clone a local copy of the MIDFIELDR drat repo.
+- Install the drat package. 
+
+
+
+## Update the drat repo
+
+
+- Once the work in the midfielddata package is complete, run R CMD build to produce the  `midfielddata_x.x.x.tar.gz` file, where `x.x.x` is the version number.
+- Note the path to the local drat repo, e.g., `C:/path/to/local/drat`. 
+- In R change your working directory to the file location of the `.tar.gz` file and run: 
+
+```r
+        drat::insertPackage("midfielddata_x.x.x.tar.gz", "C:/path/to/local/drat")
+```
+
+- Check by navigating to the local directory `drat\src\contrib`. You should see the latest `midfielddata_x.x.x.tar.gz` file there  
+- Commit and push to the GitHub repo 
+- Check by installing the new version of midfielddata locally by running 
+
+ ```r
+        install.packages("midfielddata", repos = "https://MIDFIELDR.github.io/drat/", type = "source")
+```       
+
+- Run `library("midfieldata")` and open the data files to confirm that your changes appear. 
+
+
+
+
+
+
+
+
+## References 
+

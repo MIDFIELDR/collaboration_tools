@@ -301,7 +301,42 @@ ggplot(df) +
 
 ```{r 2009-jwmse-fig-02}
 # data carpentry
-# TBD
+# taking numbers from figure
+df <- wrapr::build_frame(
+  "program"          , "pct_fem", "pct_mel" |
+  "Computer Science" ,      1.4 ,      2.6|
+  "Other majors"     ,      2.3 ,      1.7  |
+  "Arts & Humanities",      3.7 ,      2.5  |
+  "Social Sciences"  ,      5.2 ,      3.9  |
+  "Other STM"        ,      7.2 ,      4.4  |
+  "Business"         ,      6.8 ,      7.1  |
+  "TOLEDO"           ,     19.8 ,     22.7  |
+  "Engineering"      ,     53.6 ,     55.1 
+)
+df <- data.table(df)
+fem <- df[, .(program, pct_fem)]
+fem[, N:= round(pct_fem * 17687 / 100, )]
+setnames(fem, "pct_fem", "pct")
+fem[, sex := "Female"]
+fem[, total_by_sex := sum(N)]
+fem[, percent_by_sex := round(100 * N / total_by_sex, 1)]
+fem
+mel <- df[, .(program, pct_mel)]
+mel[, N := round(pct_mel * 61730 / 100, )]
+mel[program == "Engineering", N := N + 1]
+setnames(mel, "pct_mel", "pct")
+mel[, sex := "Male"]
+mel[, total_by_sex := sum(N)]
+mel[, percent_by_sex := round(100 * N / total_by_sex, 1)]
+mel
+
+df <- rbindlist(list(fem, mel))
+df[, pct :=  NULL]
+setcolorder(df, c("program", "sex"))
+setkeyv(df, c("program", "sex"))
+df
+
+fwrite(df, file = "data/2009-jwmse-fig-02-data.csv")
 
 # create thumbnail
 # img <- image_read("figures-raw/2009-jwmse-fig-02.png")
@@ -312,7 +347,7 @@ ggplot(df) +
 ```
 
 - Comparison by gender of the eighth-semester destinations of Engineering matriculants.
-- data (link) placeholder
+- data file [(link)](../data/2009-jwmse-fig-02-data.csv) 
 
 ![](../figures/thumb-2009-jwmse-fig-02.png)
 

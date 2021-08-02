@@ -1,0 +1,17 @@
+program,sex,N,total_by_sex,percent_by_sex
+Arts & Humanities,Female,654,17687,3.7
+Arts & Humanities,Male,1543,61730,2.5
+Business,Female,1203,17687,6.8
+Business,Male,4383,61730,7.1
+Computer Science,Female,248,17687,1.4
+Computer Science,Male,1605,61730,2.6
+Engineering,Female,9480,17687,53.6
+Engineering,Male,34014,61730,55.1
+Other STM,Female,1273,17687,7.2
+Other STM,Male,2716,61730,4.4
+Other majors,Female,407,17687,2.3
+Other majors,Male,1049,61730,1.7
+Social Sciences,Female,920,17687,5.2
+Social Sciences,Male,2407,61730,3.9
+TOLEDO,Female,3502,17687,19.8
+TOLEDO,Male,14013,61730,22.7

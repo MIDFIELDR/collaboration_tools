@@ -98,7 +98,7 @@ and Engineering</small>
 
 -   Comparison by gender of the eighth-semester destinations of
     Engineering matriculants.
--   data (link) placeholder
+-   data file [(link)](../data/2009-jwmse-fig-02-data.csv)
 
 ![](../figures/thumb-2009-jwmse-fig-02.png)
 

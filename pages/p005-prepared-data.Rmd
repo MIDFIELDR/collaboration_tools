@@ -177,6 +177,7 @@ setnames(mel,
          new = c("persist_8", "grad_6"))
 df <- rbindlist(list(fem, mel))
 setcolorder(df, c("institution", "sex"))
+setkeyv(df, c("institution", "sex"))
 fwrite(df, file = "data/2011-jee-figure-1-data.csv")
 
 # ggplot(df, aes(x = persist_8, y = grad_6, color = sex)) +
@@ -202,7 +203,55 @@ fwrite(df, file = "data/2011-jee-figure-1-data.csv")
 
 ```{r 2011-jee-fig-02}
 # data carpentry
-# TBD
+df <- fread("data-raw/2011-jee/fig02AllSym.csv", 
+            skip = 1, select = 1:6)
+df[, institution := base::letters[c(1:8,11)]]
+df
+
+# columns 1 and 5 are women
+# columns 2 and 6 are men
+setnames(df, old = c("V1", "V2", "V5", "V6"), 
+         new = c("f_persist_8", 
+                 "m_persist_8", 
+                 "f_pct_yield", 
+                 "m_pct_yield"))
+df[, c("V3", "V4") := NULL]
+df
+
+fem <- df[, .(institution, f_persist_8 , f_pct_yield )]
+fem[, sex := "Female"]
+setnames(fem, 
+         old = c("f_persist_8", "f_pct_yield"), 
+         new = c("persist_8", "pct_yield"))
+mel <- df[, .(institution, m_persist_8 , m_pct_yield )]
+mel[, sex := "Male"]
+setnames(mel, 
+         old = c("m_persist_8", "m_pct_yield"), 
+         new = c("persist_8", "pct_yield"))
+df2 <- rbindlist(list(fem, mel))
+setcolorder(df2, c("institution", "sex"))
+setkeyv(df2, c("institution", "sex"))
+df2
+fwrite(df2, file = "data/2011-jee-figure-2p1-data.csv")
+
+
+
+
+
+ggplot(df) +
+  geom_point(aes(x = f_persist_8, y = f_pct_yield), 
+             shape = 16) +
+  geom_point(aes(x = m_persist_8, y = m_pct_yield), 
+             shape = 1) +
+  geom_text(aes(x = f_persist_8, 
+                y = f_pct_yield, 
+                label = institution, 
+                hjust = -1)) +
+  scale_x_continuous(limits = c(0.4, 0.8)) +
+  scale_y_continuous(limits = c(0.4, 1.0)) +
+  geom_segment(aes(x = f_persist_8, y = f_pct_yield, 
+                   xend = m_persist_8, yend = m_pct_yield)) +
+  theme(aspect.ratio = 1)
 
 # create thumbnail
 # img <- image_read("figures-raw/2011-jee-fig-02.png")
@@ -213,7 +262,7 @@ fwrite(df, file = "data/2011-jee-figure-1-data.csv")
 ```
 
 - Eight-semester persistence, yield, and six-year graduation rate of various populations. Each panel compares institutions by gender. All races/ethnicities are aggregated in the main panel (Figure 2.1) and disaggregated in the smaller panels (Figures 2.2 through 2.6).
-- data (link) placeholder
+- data file 2.1 [(link)](../data/2011-jee-figure-2p1-data.csv) 
 
 ![](../figures/thumb-2011-jee-fig-02.png)
 
@@ -405,7 +454,7 @@ fwrite(df, file = "data/2008-jee-table-10-data.csv")
 #         format = "png")
 ```
 
-- Cumulative frequency of transcript-recorded grades in MIFIELD data
+- Cumulative frequency of transcript-recorded grades in MIDFIELD data
 - data file [(link)](../data/2008-jee-table-10-data.csv) 
 
 ![](../figures/thumb-2008-jee-table-10.png)
@@ -415,7 +464,7 @@ fwrite(df, file = "data/2008-jee-table-10-data.csv")
 
 
 
-
+ 
 
 
 ## references

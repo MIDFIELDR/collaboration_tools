@@ -74,7 +74,7 @@ To download a data file:
     various populations. Each panel compares institutions by gender. All
     races/ethnicities are aggregated in the main panel (Figure 2.1) and
     disaggregated in the smaller panels (Figures 2.2 through 2.6).
--   data (link) placeholder
+-   data file 2.1 [(link)](../data/2011-jee-figure-2p1-data.csv)
 
 ![](../figures/thumb-2011-jee-fig-02.png)
 
@@ -150,7 +150,7 @@ and Engineering</small>
 
 **Table 10**
 
--   Cumulative frequency of transcript-recorded grades in MIFIELD data
+-   Cumulative frequency of transcript-recorded grades in MIDFIELD data
 -   data file [(link)](../data/2008-jee-table-10-data.csv)
 
 ![](../figures/thumb-2008-jee-table-10.png)

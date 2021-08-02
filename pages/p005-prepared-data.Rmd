@@ -40,13 +40,14 @@ library("graphclassmate")
 library("r2symbols")
 library("wrapr")
 library("data.table")
+library(ggplot2)
 
 # page header image
-img <- image_read("resources/p005-header.jpg")
-img <- image_scale(img, "791x180!")
-image_write(img,
-        path = "resources/p005-header.png",
-        format = "png")
+# img <- image_read("resources/p005-header.jpg")
+# img <- image_scale(img, "791x180!")
+# image_write(img,
+#         path = "resources/p005-header.png",
+#         format = "png")
 
 thumb_size <- "300x"
 ```
@@ -78,7 +79,7 @@ To download a data file:
 
 ```{r 2019-jee-fig-04}
 # data carpentry
-df <- fread("data-raw/2019-jee-figure-4-data.csv")
+df <- fread("data-raw/2019-jee/2019-jee-figure-4-data.csv")
 df$disc_median <- round(df$disc_median, 1)
 setnames(df, old = c("disc", "disc_median"), 
          new = c("discipline", "dspn_median"))
@@ -88,11 +89,11 @@ df[, `:=` (race_ethnicity = NULL, sex = NULL)]
 fwrite(df, file = "data/2019-jee-figure-4-data.csv")
 
 # create thumbnail
-img <- image_read("figures-raw/fig004-grad-rate.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2019-jee-fig-04.png",
-        format = "png")
+# img <- image_read("figures-raw/fig004-grad-rate.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2019-jee-fig-04.png",
+#         format = "png")
 ```
 
 - Graduation rates of starters in a discipline grouped by race/ethnicity and sex 
@@ -104,7 +105,7 @@ image_write(img,
 
 ```{r 2019-jee-fig-08}
 # data carpentry
-df <- fread("data-raw/2019-jee-figure-8-data.csv")
+df <- fread("data-raw/2019-jee/2019-jee-figure-8-data.csv")
 cols_to_round<- c("dspn_stick", "dspn_median", "delta_stick", "delta_median")
 df[, (cols_to_round) := round(.SD, 1), .SDcols = c(cols_to_round)]
 setnames(df, old = c("race/ethnicity/sex"), 
@@ -112,11 +113,11 @@ setnames(df, old = c("race/ethnicity/sex"),
 fwrite(df, file = "data/2019-jee-figure-8-data.csv")
 
 # create thumbnail
-img <- image_read("figures-raw/fig008-stickiness.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2019-jee-fig-08.png",
-        format = "png")
+# img <- image_read("figures-raw/fig008-stickiness.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2019-jee-fig-08.png",
+#         format = "png")
 ```
 
 - Stickiness of a discipline (left column) and the associated increase in stickiness (right column) for students ever in that discipline who graduate in any other major 
@@ -127,15 +128,14 @@ image_write(img,
 **Figure 10**
 
 ```{r 2019-jee-fig-10}
-# data carpentry
-# TBD
+
 
 # create thumbnail
-img <- image_read("figures-raw/2019-jee-fig-10.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2019-jee-fig-10.png",
-        format = "png")
+# img <- image_read("figures-raw/2019-jee-fig-10.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2019-jee-fig-10.png",
+#         format = "png")
 ```
 
 - Contour plot of migration yield as the product of the fraction of migrators attracted to a discipline (horizontal scale) and the fraction of those students graduating in the discipline (vertical scale).
@@ -160,18 +160,41 @@ image_write(img,
 
 ```{r 2011-jee-fig-01}
 # data carpentry
-# TBD
+df <- fread("data-raw/2011-jee/Grad6Sem8FMRawData.csv", 
+            select = c("fSem8", "fGrd6", "mSem8", "mGrd6"))
+df[, institution := 1:nrow(df)]
+df
+
+fem <- df[, .(institution, fSem8, fGrd6 )]
+fem[, sex := "Female"]
+setnames(fem, 
+         old = c("fSem8", "fGrd6"), 
+         new = c("persist_8", "grad_6"))
+mel <- df[, .(institution, mSem8, mGrd6 )]
+mel[, sex := "Male"]
+setnames(mel, 
+         old = c("mSem8", "mGrd6"), 
+         new = c("persist_8", "grad_6"))
+df <- rbindlist(list(fem, mel))
+setcolorder(df, c("institution", "sex"))
+fwrite(df, file = "data/2011-jee-figure-1-data.csv")
+
+# ggplot(df, aes(x = persist_8, y = grad_6, color = sex)) +
+#   geom_smooth(method = "lm", se = FALSE) + 
+#   geom_point() +
+#   scale_x_log10(limits = c(100, 10000)) +
+#   scale_y_log10(limits = c(100, 10000))
 
 # create thumbnail
-img <- image_read("figures-raw/2011-jee-fig-01.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2011-jee-fig-01.png",
-        format = "png")
+# img <- image_read("figures-raw/2011-jee-fig-01.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2011-jee-fig-01.png",
+#         format = "png")
 ```
 
 - The number of men (open circles) and women (filled circles) at a particular institution who matriculate in engineering and persist to the eighth semester (horizontal position) and the number of those students who subsequently graduate in engineering within six years (vertical position). 
-- data (link) placeholder
+- data file [(link)](../data/2011-jee-figure-1-data.csv) 
 
 ![](../figures/thumb-2011-jee-fig-01.png)
 
@@ -182,11 +205,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2011-jee-fig-02.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2011-jee-fig-02.png",
-        format = "png")
+# img <- image_read("figures-raw/2011-jee-fig-02.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2011-jee-fig-02.png",
+#         format = "png")
 ```
 
 - Eight-semester persistence, yield, and six-year graduation rate of various populations. Each panel compares institutions by gender. All races/ethnicities are aggregated in the main panel (Figure 2.1) and disaggregated in the smaller panels (Figures 2.2 through 2.6).
@@ -201,11 +224,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2011-jee-fig-03.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2011-jee-fig-03.png",
-        format = "png")
+# img <- image_read("figures-raw/2011-jee-fig-03.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2011-jee-fig-03.png",
+#         format = "png")
 ```
 
 - Six-year graduation rates disaggregated by institution and gender. Individual panels compare behaviors by race/ethnicity.
@@ -232,11 +255,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2009-jwmse-fig-02.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2009-jwmse-fig-02.png",
-        format = "png")
+# img <- image_read("figures-raw/2009-jwmse-fig-02.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2009-jwmse-fig-02.png",
+#         format = "png")
 ```
 
 - Comparison by gender of the eighth-semester destinations of Engineering matriculants.
@@ -251,11 +274,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2009-jwmse-fig-04.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2009-jwmse-fig-04.png",
-        format = "png")
+# img <- image_read("figures-raw/2009-jwmse-fig-04.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2009-jwmse-fig-04.png",
+#         format = "png")
 ```
 
 - Percentages of Engineering matriculants persisting to the eighth-semester in Engineering.
@@ -270,11 +293,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2009-jwmse-fig-05.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2009-jwmse-fig-05.png",
-        format = "png")
+# img <- image_read("figures-raw/2009-jwmse-fig-05.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2009-jwmse-fig-05.png",
+#         format = "png")
 ```
 
 - Comparison by gender (with all races aggregated) of the distribution of fourth-semester GPAs in STEM courses 
@@ -299,11 +322,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2008-jee-fig-01.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2008-jee-fig-01.png",
-        format = "png")
+# img <- image_read("figures-raw/2008-jee-fig-01.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2008-jee-fig-01.png",
+#         format = "png")
 ```
 
 - MIDFIELD persistence chart: Outcomes at eight semesters for students matriculating in various major groups, 1987--1999
@@ -318,11 +341,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2008-jee-fig-02.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2008-jee-fig-02.png",
-        format = "png")
+# img <- image_read("figures-raw/2008-jee-fig-02.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2008-jee-fig-02.png",
+#         format = "png")
 ```
 
 - MIDFIELD migration chart: The matriculation major of students in various major groups in the eighth semester
@@ -337,11 +360,11 @@ image_write(img,
 # TBD
 
 # create thumbnail
-img <- image_read("figures-raw/2008-jee-fig-03.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2008-jee-fig-03.png",
-        format = "png")
+# img <- image_read("figures-raw/2008-jee-fig-03.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2008-jee-fig-03.png",
+#         format = "png")
 ```
 
 - MIDFIELD persistence chart for institutional comparison, all institutions, 1987--1999
@@ -375,11 +398,11 @@ df
 fwrite(df, file = "data/2008-jee-table-10-data.csv")
 
 # create thumbnail
-img <- image_read("figures-raw/2008-jee-table-10.png")
-img <- image_scale(img, thumb_size)
-image_write(img,
-        path = "figures/thumb-2008-jee-table-10.png",
-        format = "png")
+# img <- image_read("figures-raw/2008-jee-table-10.png")
+# img <- image_scale(img, thumb_size)
+# image_write(img,
+#         path = "figures/thumb-2008-jee-table-10.png",
+#         format = "png")
 ```
 
 - Cumulative frequency of transcript-recorded grades in MIFIELD data

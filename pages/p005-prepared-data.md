@@ -15,14 +15,14 @@ appeared.
 To download a data file:
 
 -   Follow the link to view the data in HTML format
--   Right-click on the “Raw” icon &gt; *Save link as …* to download the
+-   Right-click on the “Raw” icon > *Save link as …* to download the
     file
 
 ## 2019 JEE
 
 *Beyond pipeline and pathways: Ecosystem metrics*
 \[[1](#ref-Lord+Ohland+Layton+Camacho:2019)\]  
-<small>Images &#169; 2019 Journal of Engineering Education</small>
+<small>Images copyright 2019 Journal of Engineering Education</small>
 
 **Figure 4**
 
@@ -55,7 +55,7 @@ To download a data file:
 
 *Race, gender, and measures of success in engineering education*
 \[[2](#ref-Ohland+Brawner+Camacho+others:2011)\]  
-<small>Images &#169; 2011 Journal of Engineering Education</small>
+<small>Images copyright 2011 Journal of Engineering Education</small>
 
 **Figure 1**
 
@@ -64,7 +64,7 @@ To download a data file:
     the eighth semester (horizontal position) and the number of those
     students who subsequently graduate in engineering within six years
     (vertical position).
--   data (link) placeholder
+-   data file [(link)](../data/2011-jee-figure-1-data.csv)
 
 ![](../figures/thumb-2011-jee-fig-01.png)
 
@@ -91,8 +91,8 @@ To download a data file:
 *Who’s persisting in engineering? A comparative analysis of female and
 male Asian, Black, Hispanic, Native American, and White students*
 \[[3](#ref-Lord+Camacho+Layton+others:2009)\]  
-<small>Images &#169; 2009 Journal of Women and Minorities in Science and
-Engineering</small>
+<small>Images copyright 2009 Journal of Women and Minorities in Science
+and Engineering</small>
 
 **Figure 2**
 
@@ -122,7 +122,7 @@ Engineering</small>
 
 *Persistence, engagement, and migration in engineering programs*
 \[[4](#ref-Ohland+Sheppard+Lichtenstein+others:2008)\]  
-<small>Images &#169; 2008 Journal of Engineering Education</small>
+<small>Images copyright 2008 Journal of Engineering Education</small>
 
 **Figure 1**
 
@@ -157,7 +157,7 @@ Engineering</small>
 
 ## references
 
-<div id="refs" class="references csl-bib-body">
+<div id="refs" class="references csl-bib-body references csl-bib-body">
 
 <div id="ref-Lord+Ohland+Layton+Camacho:2019" class="csl-entry">
 
